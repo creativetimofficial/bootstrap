@@ -104,8 +104,9 @@ Contextual classes also work with `.list-group-item-action`. Note the addition o
 </div>
 {{< /example >}}
 
-{% capture callout-include %}{% include callout-warning-color-assistive-technologies.md %}{% endcapture %}
-{{ callout-include | markdownify }}
+{{< callout warning >}}
+{{< partial "callout-warning-color-assistive-technologies.md" >}}
+{{< /callout >}}
 
 ## With badges
 

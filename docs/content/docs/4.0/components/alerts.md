@@ -17,8 +17,9 @@ Alerts are available for any length of text, as well as an optional dismiss butt
 </div>{% endfor %}
 {{< /example >}}
 
-{% capture callout-include %}{% include callout-warning-color-assistive-technologies.md %}{% endcapture %}
-{{ callout-include | markdownify }}
+{{< callout warning >}}
+{{< partial "callout-warning-color-assistive-technologies.md" >}}
+{{< /callout >}}
 
 ### Link color
 

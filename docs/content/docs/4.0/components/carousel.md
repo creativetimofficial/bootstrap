@@ -103,11 +103,11 @@ You can also add the indicators to the carousel, alongside the controls, too.
 </div>
 {{< /example >}}
 
-{% callout warning %}
+{{< callout warning >}}
 #### Initial active element required
 
 The `.active` class needs to be added to one of the slides. Otherwise, the carousel will not be visible.
-{% endcallout %}
+{{< /callout >}}
 
 ### With captions
 
@@ -230,8 +230,9 @@ Options can be passed via data attributes or JavaScript. For data attributes, ap
 
 ### Methods
 
-{% capture callout-include %}{% include callout-danger-async-methods.md %}{% endcapture %}
-{{ callout-include | markdownify }}
+{{< callout danger >}}
+{{< partial "callout-danger-async-methods.md" >}}
+{{< /callout >}}
 
 #### `.carousel(options)`
 

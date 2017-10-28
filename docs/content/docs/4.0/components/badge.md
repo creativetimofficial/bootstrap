@@ -56,8 +56,9 @@ Add any of the below mentioned modifier classes to change the appearance of a ba
 <span class="badge badge-{{ color.name }}">{{ color.name | capitalize }}</span>{% endfor %}
 {{< /example >}}
 
-{% capture callout-include %}{% include callout-warning-color-assistive-technologies.md %}{% endcapture %}
-{{ callout-include | markdownify }}
+{{< callout warning >}}
+{{< partial "callout-warning-color-assistive-technologies.md" >}}
+{{< /callout >}}
 
 ## Pill badges
 
