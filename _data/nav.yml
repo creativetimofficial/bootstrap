@@ -31,3 +31,9 @@
     - title: Scrollspy
     - title: Tooltips
     - title: Typography
+
+- title: Plugins
+  pages:
+    - title: DateTimePicker
+    - title: Full calendar
+    - title: Wizard
