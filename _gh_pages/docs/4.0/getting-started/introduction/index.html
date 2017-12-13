@@ -16,6 +16,9 @@
 
 <link rel="stylesheet" href="/assets/css/material-kit.css">
 
+<!-- Icons and fonts -->
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
 
 <link href="/assets/css/docs.min.css" rel="stylesheet">
 
@@ -159,17 +162,11 @@
             <a href="/docs/4.0/getting-started/introduction/">
               Introduction
             </a></li><li>
-            <a href="/docs/4.0/getting-started/overview/">
-              Overview
-            </a></li><li>
-            <a href="/docs/4.0/getting-started/brand/">
-              Brand
-            </a></li><li>
             <a href="/docs/4.0/getting-started/license/">
               License
             </a></li><li>
-            <a href="/docs/4.0/getting-started/translations/">
-              Translations
+            <a href="/docs/4.0/getting-started/file-structure/">
+              File Structure
             </a></li></ul>
     </div><div class="bd-toc-item active">
       <a class="bd-toc-link" href="/docs/4.0/components/alerts/">
@@ -189,9 +186,6 @@
             <a href="/docs/4.0/components/buttons/">
               Buttons
             </a></li><li>
-            <a href="/docs/4.0/components/button-group/">
-              Button group
-            </a></li><li>
             <a href="/docs/4.0/components/card/">
               Card
             </a></li><li>
@@ -206,18 +200,6 @@
             </a></li><li>
             <a href="/docs/4.0/components/forms/">
               Forms
-            </a></li><li>
-            <a href="/docs/4.0/components/images/">
-              Images
-            </a></li><li>
-            <a href="/docs/4.0/components/input-group/">
-              Input group
-            </a></li><li>
-            <a href="/docs/4.0/components/jumbotron/">
-              Jumbotron
-            </a></li><li>
-            <a href="/docs/4.0/components/list-group/">
-              List group
             </a></li><li>
             <a href="/docs/4.0/components/modal/">
               Modal
@@ -275,15 +257,6 @@
 </ul>
 </li>
 <li class="toc-entry toc-h2"><a href="#starter-template">Starter template</a></li>
-<li class="toc-entry toc-h2"><a href="#important-globals">Important globals</a>
-<ul>
-<li class="toc-entry toc-h3"><a href="#html5-doctype">HTML5 doctype</a></li>
-<li class="toc-entry toc-h3"><a href="#responsive-meta-tag">Responsive meta tag</a></li>
-<li class="toc-entry toc-h3"><a href="#box-sizing">Box-sizing</a></li>
-<li class="toc-entry toc-h3"><a href="#reboot">Reboot</a></li>
-</ul>
-</li>
-<li class="toc-entry toc-h2"><a href="#community">Community</a></li>
 </ul>
           </div>
         
@@ -299,7 +272,8 @@
 
 <p>Copy-paste the stylesheet <code class="highlighter-rouge">&lt;link&gt;</code> into your <code class="highlighter-rouge">&lt;head&gt;</code> before all other stylesheets to load our CSS.</p>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"</span> <span class="na">integrity=</span><span class="s">"sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"</span> <span class="na">integrity=</span><span class="s">"sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"/assets/css/material-kit.css"</span><span class="nt">&gt;</span></code></pre></figure>
 
 <h3 id="js">JS</h3>
 
@@ -358,60 +332,6 @@
 
 <p>That’s all you need for overall page requirements. Visit the <a href="/docs/4.0/layout/overview/">Layout docs</a> or <a href="/docs/4.0/examples/">our official examples</a> to start laying out your site’s content and components.</p>
 
-<h2 id="important-globals">Important globals</h2>
-
-<p>Bootstrap employs a handful of important global styles and settings that you’ll need to be aware of when using it, all of which are almost exclusively geared towards the <em>normalization</em> of cross browser styles. Let’s dive in.</p>
-
-<h3 id="html5-doctype">HTML5 doctype</h3>
-
-<p>Bootstrap requires the use of the HTML5 doctype. Without it, you’ll see some funky incomplete styling, but including it shouldn’t cause any considerable hiccups.</p>
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!doctype html&gt;</span>
-<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
-  ...
-<span class="nt">&lt;/html&gt;</span></code></pre></figure>
-
-<h3 id="responsive-meta-tag">Responsive meta tag</h3>
-
-<p>Bootstrap is developed <em>mobile first</em>, a strategy in which we optimize code for mobile devices first and then scale up components as necessary using CSS media queries. To ensure proper rendering and touch zooming for all devices, <strong>add the responsive viewport meta tag</strong> to your <code class="highlighter-rouge">&lt;head&gt;</code>.</p>
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1, shrink-to-fit=no"</span><span class="nt">&gt;</span></code></pre></figure>
-
-<p>You can see an example of this in action in the <a href="#starter-template">starter template</a>.</p>
-
-<h3 id="box-sizing">Box-sizing</h3>
-
-<p>For more straightforward sizing in CSS, we switch the global <code class="highlighter-rouge">box-sizing</code> value from <code class="highlighter-rouge">content-box</code> to <code class="highlighter-rouge">border-box</code>. This ensures <code class="highlighter-rouge">padding</code> does not affect the final computed width of an element, but it can cause problems with some third party software like Google Maps and Google Custom Search Engine.</p>
-
-<p>On the rare occasion you need to override it, use something like the following:</p>
-
-<figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="nc">.selector-for-some-widget</span> <span class="p">{</span>
-  <span class="nl">box-sizing</span><span class="p">:</span> <span class="n">content-box</span><span class="p">;</span>
-<span class="p">}</span></code></pre></figure>
-
-<p>With the above snippet, nested elements—including generated content via <code class="highlighter-rouge">::before</code> and <code class="highlighter-rouge">::after</code>—will all inherit the specified <code class="highlighter-rouge">box-sizing</code> for that <code class="highlighter-rouge">.selector-for-some-widget</code>.</p>
-
-<p>Learn more about <a href="https://css-tricks.com/box-sizing/">box model and sizing at CSS Tricks</a>.</p>
-
-<h3 id="reboot">Reboot</h3>
-
-<p>For improved cross-browser rendering, we use <a href="/docs/4.0/content/reboot/">Reboot</a> to correct inconsistencies across browsers and devices while providing slightly more opinionated resets to common HTML elements.</p>
-
-<h2 id="community">Community</h2>
-
-<p>Stay up to date on the development of Bootstrap and reach out to the community with these helpful resources.</p>
-
-<ul>
-  <li>Follow <a href="https://twitter.com/getbootstrap">@getbootstrap on Twitter</a>.</li>
-  <li>Read and subscribe to <a href="https://blog.getbootstrap.com">The Official Bootstrap Blog</a>.</li>
-  <li>Join <a href="https://bootstrap-slack.herokuapp.com">the official Slack room</a>.</li>
-  <li>Chat with fellow Bootstrappers in IRC. On the <code class="highlighter-rouge">irc.freenode.net</code> server, in the <code class="highlighter-rouge">##bootstrap</code> channel.</li>
-  <li>Implementation help may be found at Stack Overflow (tagged <a href="https://stackoverflow.com/questions/tagged/bootstrap-4"><code class="highlighter-rouge">bootstrap-4</code></a>).</li>
-  <li>Developers should use the keyword <code class="highlighter-rouge">bootstrap</code> on packages which modify or add to the functionality of Bootstrap when distributing through <a href="https://www.npmjs.com/browse/keyword/bootstrap">npm</a> or similar delivery mechanisms for maximum discoverability.</li>
-</ul>
-
-<p>You can also follow <a href="https://twitter.com/getbootstrap">@getbootstrap on Twitter</a> for the latest gossip and awesome music videos.</p>
-
         </main>
       </div>
     </div>
@@ -419,7 +339,8 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
 
-<script src="/assets/js/vendor/popper.min.js"></script><script src="/dist/js/bootstrap.js"></script><script src="/assets/js/vendor/anchor.min.js"></script>
+<script src="/assets/js/vendor/popper.min.js"></script>
+<script src="/assets/js/plugins/jasny-bootstrap.min.js"></script><script src="/dist/js/bootstrap.js"></script><script src="/assets/js/vendor/anchor.min.js"></script>
   <script src="/assets/js/vendor/clipboard.min.js"></script>
   <script src="/assets/js/vendor/holder.min.js"></script>
   <script src="/assets/js/src/application.js"></script>

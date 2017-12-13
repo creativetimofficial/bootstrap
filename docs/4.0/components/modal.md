@@ -208,6 +208,203 @@ When modals become too long for the user's viewport or device, they scroll indep
 </div>
 {% endhighlight %}
 
+### Login modal
+
+{% example html %}
+<button class="btn btn-round" data-toggle="modal" data-target="#loginModal">
+    Login<i class="material-icons">assignment</i>
+
+</button>
+
+<div class="modal show" id="loginModal" tabindex="-1" role="">
+    <div class="modal-dialog modal-login" role="document">
+        <div class="modal-content">
+            <div class="card card-signup card-plain">
+                <div class="modal-header">
+                    <div class="card-header card-header-primary text-center">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="material-icons">clear</i></button>
+                        <h4 class="card-title">Log in</h4>
+                        <div class="social-line">
+                            <a href="#pablo" class="btn btn-just-icon btn-simple">
+                                <i class="fa fa-facebook-square"></i>
+                            </a>
+                            <a href="#pablo" class="btn btn-just-icon btn-simple">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a href="#pablo" class="btn btn-just-icon btn-simple">
+                                <i class="fa fa-google-plus"></i>
+                            <div class="ripple-container"></div></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <form class="form" method="" action="">
+                        <p class="description text-center">Or Be Classical</p>
+                        <div class="card-body">
+
+                            <div class="form-group bmd-form-group">
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <i class="material-icons">face</i>
+                                    </span>
+                                    <input type="text" class="form-control" placeholder="First Name...">
+                                </div>
+                            </div>
+
+                            <div class="form-group bmd-form-group">
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <i class="material-icons">email</i>
+                                    </span>
+                                    <input type="text" class="form-control" placeholder="Email...">
+                                </div>
+                            </div>
+
+                            <div class="form-group bmd-form-group">
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <i class="material-icons">lock_outline</i>
+                                    </span>
+                                    <input type="password" placeholder="Password..." class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <a href="#pablo" class="btn btn-primary btn-simple btn-wd btn-lg">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endexample %}
+
+### Signup modal
+
+
+{% example html %}
+
+<button class="btn btn-round" data-toggle="modal" data-target="#signupModal">
+    <i class="material-icons">assignment</i>
+    SignUp
+</button>
+
+<div class="modal fade show" id="signupModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-signup" role="document">
+        <div class="modal-content">
+            <div class="card card-signup card-plain">
+				    <div class="modal-header">
+                <h5 class="modal-title card-title">Register</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i class="material-icons">clear</i>
+                </button>
+		      	</div>
+		      	<div class="modal-body">
+					<div class="row">
+						<div class="col-md-5 ml-auto">
+							<div class="info info-horizontal">
+								<div class="icon icon-rose">
+									<i class="material-icons">timeline</i>
+								</div>
+								<div class="description">
+									<h4 class="info-title">Marketing</h4>
+									<p class="description">
+										We've created the marketing campaign of the website. It was a very interesting collaboration.
+									</p>
+								</div>
+							</div>
+
+							<div class="info info-horizontal">
+								<div class="icon icon-primary">
+									<i class="material-icons">code</i>
+								</div>
+								<div class="description">
+									<h4 class="info-title">Fully Coded in HTML5</h4>
+									<p class="description">
+										We've developed the website with HTML5 and CSS3. The client has access to the code using GitHub.
+									</p>
+								</div>
+							</div>
+
+							<div class="info info-horizontal">
+								<div class="icon icon-info">
+									<i class="material-icons">group</i>
+								</div>
+								<div class="description">
+									<h4 class="info-title">Built Audience</h4>
+									<p class="description">
+										There is also a Fully Customizable CMS Admin Dashboard for this product.
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-5 mr-auto">
+							<div class="social text-center">
+								<button class="btn btn-just-icon btn-round btn-twitter">
+									<i class="fa fa-twitter"></i>
+								</button>
+								<button class="btn btn-just-icon btn-round btn-dribbble">
+									<i class="fa fa-dribbble"></i>
+								</button>
+								<button class="btn btn-just-icon btn-round btn-facebook">
+									<i class="fa fa-facebook"> </i>
+								</button>
+								<h4> or be classical </h4>
+							</div>
+
+							<form class="form" method="" action="">
+								<div class="card-body">
+                  <div class="form-group bmd-form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <i class="material-icons">face</i>
+                        </span>
+                        <input type="text" class="form-control" placeholder="First Name...">
+                    </div>
+                  </div>
+                  <div class="form-group bmd-form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <i class="material-icons">email</i>
+                        </span>
+                        <input type="text" class="form-control" placeholder="Email...">
+                    </div>
+                  </div>
+                  <div class="form-group bmd-form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <i class="material-icons">lock_outline</i>
+                        </span>
+                        <input type="password" placeholder="Password..." class="form-control">
+                    </div>
+                  </div>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" value="" checked="">
+                        <span class="form-check-sign">
+                            <span class="check"></span>
+                        </span>
+                        I agree to the <a href="#something">terms and conditions</a>.
+                    </label>
+                  </div>
+								</div>
+								<div class="modal-footer justify-content-center">
+									<a href="#pablo" class="btn btn-primary btn-round">Get Started</a>
+								</div>
+							</form>
+						</div>
+					</div>
+		      	</div>
+			</div>
+        </div>
+    </div>
+</div>
+
+{% endexample %}
+
 ### Tooltips and popovers
 
 [Tooltips]({{ site.baseurl }}/docs/{{ site.docs_version }}/components/tooltips/) and [popovers]({{ site.baseurl }}/docs/{{ site.docs_version }}/components/popovers/) can be placed within modals as needed. When modals are closed, any tooltips and popovers within are also automatically dismissed.
@@ -251,161 +448,6 @@ When modals become too long for the user's viewport or device, they scroll indep
   <p><a href="#" class="tooltip-test" title="Tooltip">This link</a> and <a href="#" class="tooltip-test" title="Tooltip">that link</a> have tooltips on hover.</p>
 </div>
 {% endhighlight %}
-
-### Using the grid
-
-Utilize the Bootstrap grid system within a modal by nesting `.container-fluid` within the `.modal-body`. Then, use the normal grid system classes as you would anywhere else.
-
-<div id="gridSystemModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="gridModalLabel">Grids in modals</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-      </div>
-      <div class="modal-body">
-        <div class="container-fluid bd-example-row">
-          <div class="row">
-            <div class="col-md-4">.col-md-4</div>
-            <div class="col-md-4 ml-auto">.col-md-4 .ml-auto</div>
-          </div>
-          <div class="row">
-            <div class="col-md-3 ml-auto">.col-md-3 .ml-auto</div>
-            <div class="col-md-2 ml-auto">.col-md-2 .ml-auto</div>
-          </div>
-          <div class="row">
-            <div class="col-md-6 ml-auto">.col-md-6 .ml-auto</div>
-          </div>
-          <div class="row">
-            <div class="col-sm-9">
-              Level 1: .col-sm-9
-              <div class="row">
-                <div class="col-8 col-sm-6">
-                  Level 2: .col-8 .col-sm-6
-                </div>
-                <div class="col-4 col-sm-6">
-                  Level 2: .col-4 .col-sm-6
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="bd-example">
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#gridSystemModal">
-  Launch demo modal
-</button>
-</div>
-
-{% highlight html %}
-<div class="modal-body">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-4">.col-md-4</div>
-      <div class="col-md-4 ml-auto">.col-md-4 .ml-auto</div>
-    </div>
-    <div class="row">
-      <div class="col-md-3 ml-auto">.col-md-3 .ml-auto</div>
-      <div class="col-md-2 ml-auto">.col-md-2 .ml-auto</div>
-    </div>
-    <div class="row">
-      <div class="col-md-6 ml-auto">.col-md-6 .ml-auto</div>
-    </div>
-    <div class="row">
-      <div class="col-sm-9">
-        Level 1: .col-sm-9
-        <div class="row">
-          <div class="col-8 col-sm-6">
-            Level 2: .col-8 .col-sm-6
-          </div>
-          <div class="col-4 col-sm-6">
-            Level 2: .col-4 .col-sm-6
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-{% endhighlight %}
-
-### Varying modal content
-
-Have a bunch of buttons that all trigger the same modal with slightly different contents? Use `event.relatedTarget` and [HTML `data-*` attributes](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes) (possibly [via jQuery](https://api.jquery.com/data/)) to vary the contents of the modal depending on which button was clicked.
-
-Below is a live demo followed by example HTML and JavaScript. For more information, [read the modal events docs](#events) for details on `relatedTarget`.
-
-{% example html %}
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Open modal for @mdo</button>
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Open modal for @fat</button>
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Open modal for @getbootstrap</button>
-
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <form>
-          <div class="form-group">
-            <label for="recipient-name" class="col-form-label">Recipient:</label>
-            <input type="text" class="form-control" id="recipient-name">
-          </div>
-          <div class="form-group">
-            <label for="message-text" class="col-form-label">Message:</label>
-            <textarea class="form-control" id="message-text"></textarea>
-          </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Send message</button>
-      </div>
-    </div>
-  </div>
-</div>
-{% endexample %}
-
-{% highlight js %}
-$('#exampleModal').on('show.bs.modal', function (event) {
-  var button = $(event.relatedTarget) // Button that triggered the modal
-  var recipient = button.data('whatever') // Extract info from data-* attributes
-  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
-  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
-  var modal = $(this)
-  modal.find('.modal-title').text('New message to ' + recipient)
-  modal.find('.modal-body input').val(recipient)
-})
-{% endhighlight %}
-
-### Remove animation
-
-For modals that simply appear rather than fade in to view, remove the `.fade` class from your modal markup.
-
-{% highlight html %}
-<div class="modal" tabindex="-1" role="dialog" aria-labelledby="..." aria-hidden="true">
-  ...
-</div>
-{% endhighlight %}
-
-### Dynamic heights
-
-If the height of a modal changes while it is open, you should call `$('#myModal').data('bs.modal').handleUpdate()` or `$('#myModal').modal('handleUpdate')` to readjust the modal's position in case a scrollbar appears.
-
-### Accessibility
-
-Be sure to add `role="dialog"` and `aria-labelledby="..."`, referencing the modal title, to `.modal`, and `role="document"` to the `.modal-dialog` itself. Additionally, you may give a description of your modal dialog with `aria-describedby` on `.modal`.
 
 ### Embedding YouTube videos
 
@@ -536,82 +578,4 @@ Options can be passed via data attributes or JavaScript. For data attributes, ap
   </tbody>
 </table>
 
-### Methods
-
-{% capture callout-include %}{% include callout-danger-async-methods.md %}{% endcapture %}
-{{ callout-include | markdownify }}
-
-#### `.modal(options)`
-
-Activates your content as a modal. Accepts an optional options `object`.
-
-{% highlight js %}
-$('#myModal').modal({
-  keyboard: false
-})
-{% endhighlight %}
-
-#### `.modal('toggle')`
-
-Manually toggles a modal. **Returns to the caller before the modal has actually been shown or hidden** (i.e. before the `shown.bs.modal` or `hidden.bs.modal` event occurs).
-
-{% highlight js %}$('#myModal').modal('toggle'){% endhighlight %}
-
-#### `.modal('show')`
-
-Manually opens a modal. **Returns to the caller before the modal has actually been shown** (i.e. before the `shown.bs.modal` event occurs).
-
-{% highlight js %}$('#myModal').modal('show'){% endhighlight %}
-
-#### `.modal('hide')`
-
-Manually hides a modal. **Returns to the caller before the modal has actually been hidden** (i.e. before the `hidden.bs.modal` event occurs).
-
-{% highlight js %}$('#myModal').modal('hide'){% endhighlight %}
-
-#### `.modal('handleUpdate')`
-
-Manually readjust the modal's position if the height of a modal changes while it is open (i.e. in case a scrollbar appears).
-
-{% highlight js %}$('#myModal').modal('handleUpdate'){% endhighlight %}
-
-### `.modal('dispose')`
-
-Destroys an element's modal.
-
-### Events
-
-Bootstrap's modal class exposes a few events for hooking into modal functionality. All modal events are fired at the modal itself (i.e. at the `<div class="modal">`).
-
-<table class="table table-bordered table-striped table-responsive">
-  <thead>
-    <tr>
-      <th style="width: 150px;">Event Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>show.bs.modal</td>
-      <td>This event fires immediately when the <code>show</code> instance method is called. If caused by a click, the clicked element is available as the <code>relatedTarget</code> property of the event.</td>
-    </tr>
-    <tr>
-      <td>shown.bs.modal</td>
-      <td>This event is fired when the modal has been made visible to the user (will wait for CSS transitions to complete). If caused by a click, the clicked element is available as the <code>relatedTarget</code> property of the event.</td>
-    </tr>
-    <tr>
-      <td>hide.bs.modal</td>
-      <td>This event is fired immediately when the <code>hide</code> instance method has been called.</td>
-    </tr>
-    <tr>
-      <td>hidden.bs.modal</td>
-      <td>This event is fired when the modal has finished being hidden from the user (will wait for CSS transitions to complete).</td>
-    </tr>
-  </tbody>
-</table>
-
-{% highlight js %}
-$('#myModal').on('hidden.bs.modal', function (e) {
-  // do something...
-})
-{% endhighlight %}
+If you want to see more examples and properties please check the official [Bootstrap Documentation](http://getbootstrap.com/docs/4.0/components/modal/)

@@ -8,9 +8,5 @@
   hex: "#dc3545"
 - name: warning
   hex: "#ffc107"
-- name: info
-  hex: "#17a2b8"
-- name: light
-  hex: "#f8f9fa"
-- name: dark
-  hex: "#343a40"
+- name: rose
+  hex: "#e91e63"

@@ -15,33 +15,20 @@ Bootstrap includes several predefined button styles, each serving its own semant
 {% for color in site.data.theme-colors %}
 <button type="button" class="btn btn-{{ color.name }}">{{ color.name | capitalize }}</button>{% endfor %}
 
-<button type="button" class="btn btn-link">Link</button>
 {% endexample %}
 
-{% capture callout-include %}{% include callout-warning-color-assistive-technologies.md %}{% endcapture %}
-{{ callout-include | markdownify }}
-
-## Button tags
-
-The `.btn` classes are designed to be used with the `<button>` element. However, you can also use these classes on `<a>` or `<input>` elements (though some browsers may apply a slightly different rendering).
-
-When using button classes on `<a>` elements that are used to trigger in-page functionality (like collapsing content), rather than linking to new pages or sections within the current page, these links should be given a `role="button"` to appropriately convey their purpose to assistive technologies such as screen readers.
+## Style buttons
 
 {% example html %}
-<a class="btn btn-primary" href="#" role="button">Link</a>
-<button class="btn btn-primary" type="submit">Button</button>
-<input class="btn btn-primary" type="button" value="Input">
-<input class="btn btn-primary" type="submit" value="Submit">
-<input class="btn btn-primary" type="reset" value="Reset">
-{% endexample %}
-
-## Outline buttons
-
-In need of a button, but not the hefty background colors they bring? Replace the default modifier classes with the `.btn-outline-*` ones to remove all background images and colors on any button.
-
-{% example html %}
-{% for color in site.data.theme-colors %}
-<button type="button" class="btn btn-outline-{{ color.name }}">{{ color.name | capitalize }}</button>{% endfor %}
+<button class="btn btn-primary">Default</button>
+<button class="btn btn-primary btn-round">Round</button>
+<button class="btn btn-primary btn-round">
+  <i class="material-icons">favorite</i> With Icon
+</button>
+<button class="btn btn-primary btn-fab btn-fab-mini btn-round">
+  <i class="material-icons">favorite</i>
+</button>
+<button class="btn btn-primary btn-simple">Simple</button>
 {% endexample %}
 
 ## Sizes
@@ -49,31 +36,200 @@ In need of a button, but not the hefty background colors they bring? Replace the
 Fancy larger or smaller buttons? Add `.btn-lg` or `.btn-sm` for additional sizes.
 
 {% example html %}
-<button type="button" class="btn btn-primary btn-lg">Large button</button>
-<button type="button" class="btn btn-secondary btn-lg">Large button</button>
+<button class="btn btn-primary btn-xs">x-Small</button>
+<button class="btn btn-primary btn-sm">Small</button>
+<button class="btn btn-primary">Regular</button>
+<button class="btn btn-primary btn-lg">Large</button>
 {% endexample %}
+
+## Social Buttons
 
 {% example html %}
-<button type="button" class="btn btn-primary btn-sm">Small button</button>
-<button type="button" class="btn btn-secondary btn-sm">Small button</button>
+
+<div class="row">
+   <div class="col-md-3 social-buttons-demo">
+     <h3><small> Default </small></h3>
+    <button class="btn btn-social btn-fill btn-twitter">
+      <i class="fa fa-twitter"></i> Connect with Twitter
+    </button><br>
+    <button class="btn btn-social btn-fill btn-facebook">
+      <i class="fa fa-facebook-square"></i> Share &middot; 2.2k
+    </button><br>
+    <button class="btn btn-social btn-fill btn-google">
+      <i class="fa fa-google-square"></i> Share on Google+
+    </button><br>
+    <button class="btn btn-social btn-fill btn-linkedin">
+      <i class="fa fa-linkedin-square"></i> Connect with Linkedin
+    </button><br>
+    <button class="btn btn-social btn-fill btn-pinterest">
+      <i class="fa fa-pinterest"></i> Pint it &middot; 212
+    </button><br>
+    <button class="btn btn-social btn-fill btn-youtube">
+      <i class="fa fa-youtube-play"></i> View on Youtube
+    </button><br>
+    <button class="btn btn-social btn-fill btn-tumblr">
+      <i class="fa fa-tumblr-square"></i> Repost
+    </button><br>
+    <button class="btn btn-social btn-fill btn-github">
+      <i class="fa fa-github"></i> Connect with Github
+    </button><br>
+    <button class="btn btn-social btn-fill btn-behance">
+      <i class="fa fa-behance-square"></i> Follow us
+    </button><br>
+    <button class="btn btn-social btn-fill btn-dribbble">
+      <i class="fa fa-dribbble"></i> Find us on Dribble
+    </button><br>
+    <button class="btn btn-social btn-fill btn-reddit">
+      <i class="fa fa-reddit"></i> Repost &middot; 232
+    </button><br>
+   </div>
+   <div class="col-md-1 social-buttons-demo">
+   <h3><small>&nbsp;</small></h3>
+    <button class="btn btn-just-icon btn-twitter">
+      <i class="fa fa-twitter"></i>
+    </button><br>
+    <button class="btn btn-just-icon  btn-facebook">
+      <i class="fa fa-facebook"> </i>
+    </button><br>
+    <button class="btn btn-just-icon  btn-google">
+      <i class="fa fa-google"> </i>
+    </button><br>
+    <button class="btn btn-just-icon  btn-linkedin">
+      <i class="fa fa-linkedin"></i>
+    </button><br>
+    <button class="btn btn-just-icon  btn-pinterest">
+      <i class="fa fa-pinterest"></i>
+    </button><br>
+    <button class="btn btn-just-icon  btn-youtube">
+      <i class="fa fa-youtube"> </i>
+    </button><br>
+    <button class="btn btn-just-icon  btn-tumblr">
+      <i class="fa fa-tumblr"> </i>
+    </button><br>
+    <button class="btn btn-just-icon  btn-github">
+      <i class="fa fa-github"></i>
+    </button><br>
+    <button class="btn btn-just-icon  btn-behance">
+      <i class="fa fa-behance"></i>
+    </button><br>
+    <button class="btn btn-just-icon  btn-dribbble">
+      <i class="fa fa-dribbble"></i>
+    </button><br>
+    <button class="btn btn-just-icon  btn-reddit">
+      <i class="fa fa-reddit"></i>
+    </button><br>
+   </div>
+   <div class="col-md-1 social-buttons-demo">
+     <h3><small>&nbsp;</small></h3>
+    <button class="btn btn-just-icon btn-round btn-twitter">
+      <i class="fa fa-twitter"></i>
+    </button><br>
+    <button class="btn btn-just-icon btn-round btn-facebook">
+      <i class="fa fa-facebook"> </i>
+    </button><br>
+    <button class="btn btn-just-icon btn-round btn-google">
+      <i class="fa fa-google"> </i>
+    </button><br>
+    <button class="btn btn-just-icon btn-round btn-linkedin">
+      <i class="fa fa-linkedin"></i>
+    </button><br>
+    <button class="btn btn-just-icon btn-round btn-pinterest">
+      <i class="fa fa-pinterest"></i>
+    </button><br>
+    <button class="btn btn-just-icon btn-round btn-youtube">
+      <i class="fa fa-youtube"> </i>
+    </button><br>
+    <button class="btn btn-just-icon btn-round btn-tumblr">
+      <i class="fa fa-tumblr"> </i>
+    </button><br>
+    <button class="btn btn-just-icon btn-round btn-github">
+      <i class="fa fa-github"></i>
+    </button><br>
+    <button class="btn btn-just-icon btn-round btn-behance">
+      <i class="fa fa-behance"></i>
+    </button><br>
+    <button class="btn btn-just-icon btn-round btn-dribbble">
+      <i class="fa fa-dribbble"></i>
+    </button><br>
+    <button class="btn btn-just-icon btn-round btn-reddit">
+      <i class="fa fa-reddit"></i>
+    </button><br>
+   </div>
+   <div class="col-md-1 social-buttons-demo">
+     <h3><small>Simple</small></h3>
+    <button class="btn btn-simple btn-twitter">
+      <i class="fa fa-twitter"></i>
+    </button><br>
+    <button class="btn btn-simple btn-facebook">
+      <i class="fa fa-facebook-square"> </i>
+    </button><br>
+    <button class="btn btn-simple btn-google">
+      <i class="fa fa-google"> </i>
+    </button><br>
+    <button class="btn btn-simple btn-linkedin">
+      <i class="fa fa-linkedin-square"></i>
+    </button><br>
+    <button class="btn btn-simple btn-pinterest">
+      <i class="fa fa-pinterest"></i>
+    </button><br>
+    <button class="btn btn-simple btn-youtube">
+      <i class="fa fa-youtube"> </i>
+    </button><br>
+    <button class="btn btn-simple btn-tumblr">
+      <i class="fa fa-tumblr-square"> </i>
+    </button><br>
+    <button class="btn btn-simple btn-github">
+      <i class="fa fa-github"></i>
+    </button><br>
+    <button class="btn btn-simple btn-behance">
+      <i class="fa fa-behance"></i>
+    </button><br>
+    <button class="btn btn-simple btn-dribbble">
+      <i class="fa fa-dribbble"></i>
+    </button><br>
+    <button class="btn btn-simple btn-reddit">
+      <i class="fa fa-reddit"></i>
+    </button><br>
+   </div>
+   <div class="col-md-3 social-buttons-demo">
+     <h3><small>&nbsp;</small></h3>
+    <button class="btn btn-simple btn-twitter">
+      <i class="fa fa-twitter"></i> Connect with Twitter
+    </button><br>
+    <button class="btn btn-simple btn-facebook">
+      <i class="fa fa-facebook-square"></i> Share &middot; 2.2k
+    </button><br>
+    <button class="btn btn-simple btn-google">
+      <i class="fa fa-google-square"></i> Share on Google+
+    </button><br>
+    <button class="btn btn-simple btn-linkedin">
+      <i class="fa fa-linkedin-square"></i> Connect with Linkedin
+    </button><br>
+    <button class="btn btn-simple btn-pinterest">
+      <i class="fa fa-pinterest"></i> Pint it &middot; 212
+    </button><br>
+    <button class="btn btn-simple btn-youtube">
+      <i class="fa fa-youtube-play"></i> View on Youtube
+    </button><br>
+    <button class="btn btn-simple btn-tumblr">
+      <i class="fa fa-tumblr-square"></i> Repost
+    </button><br>
+    <button class="btn btn-simple btn-github">
+      <i class="fa fa-github"></i> Connect with Github
+    </button><br>
+    <button class="btn btn-simple btn-behance">
+      <i class="fa fa-behance-square"></i> Follow us
+    </button><br>
+    <button class="btn btn-simple btn-dribbble">
+      <i class="fa fa-dribbble"></i> Find us on Dribble
+    </button><br>
+    <button class="btn btn-simple btn-reddit">
+      <i class="fa fa-reddit"></i> Repost &middot; 232
+    </button><br>
+   </div>
+</div>
+
 {% endexample %}
-
-Create block level buttons—those that span the full width of a parent—by adding `.btn-block`.
-
-{% example html %}
-<button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
-<button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button>
-{% endexample %}
-
-## Active state
-
-Buttons will appear pressed (with a darker background, darker border, and inset shadow) when active. **There's no need to add a class to `<button>`s as they use a pseudo-class**. However, you can still force the same active appearance with `.active` (and include the <code>aria-pressed="true"</code> attribute) should you need to replicate the state programmatically.
-
-{% example html %}
-<a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Primary link</a>
-<a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Link</a>
-{% endexample %}
-
 ## Disabled state
 
 Make buttons look inactive by adding the `disabled` boolean attribute to any `<button>` element.
@@ -100,10 +256,6 @@ Disabled buttons using the `<a>` element behave a bit different:
 The `.disabled` class uses `pointer-events: none` to try to disable the link functionality of `<a>`s, but that CSS property is not yet standardized. In addition, even in browsers that do support `pointer-events: none`, keyboard navigation remains unaffected, meaning that sighted keyboard users and users of assistive technologies will still be able to activate these links. So to be safe, add a `tabindex="-1"` attribute on these links (to prevent them from receiving keyboard focus) and use custom JavaScript to disable their functionality.
 {% endcallout %}
 
-## Button plugin
-
-Do more with buttons. Control button states or create groups of buttons for more components like toolbars.
-
 ### Toggle states
 
 Add `data-toggle="button"` to toggle a button's `active` state. If you're pre-toggling a button, you must manually add the `.active` class **and** `aria-pressed="true"` to the `<button>`.
@@ -114,45 +266,4 @@ Add `data-toggle="button"` to toggle a button's `active` state. If you're pre-to
 </button>
 {% endexample %}
 
-### Checkbox and radio buttons
-
-Bootstrap's `.button` styles can be applied to other elements, such as `<label>`s, to provide checkbox or radio style button toggling. Add `data-toggle="buttons"` to a `.btn-group` containing those modified buttons to enable toggling in their respective styles.
-
-The checked state for these buttons is **only updated via `click` event** on the button. If you use another method to update the input—e.g., with `<input type="reset">` or by manually applying the input's `checked` property—you'll need to toggle `.active` on the `<label>` manually.
-
-Note that pre-checked buttons require you to manually add the `.active` class to the input's `<label>`.
-
-{% example html %}
-<div class="btn-group" data-toggle="buttons">
-  <label class="btn btn-secondary active">
-    <input type="checkbox" checked autocomplete="off"> Checkbox 1 (pre-checked)
-  </label>
-  <label class="btn btn-secondary">
-    <input type="checkbox" autocomplete="off"> Checkbox 2
-  </label>
-  <label class="btn btn-secondary">
-    <input type="checkbox" autocomplete="off"> Checkbox 3
-  </label>
-</div>
-{% endexample %}
-
-{% example html %}
-<div class="btn-group" data-toggle="buttons">
-  <label class="btn btn-secondary active">
-    <input type="radio" name="options" id="option1" autocomplete="off" checked> Radio 1 (preselected)
-  </label>
-  <label class="btn btn-secondary">
-    <input type="radio" name="options" id="option2" autocomplete="off"> Radio 2
-  </label>
-  <label class="btn btn-secondary">
-    <input type="radio" name="options" id="option3" autocomplete="off"> Radio 3
-  </label>
-</div>
-{% endexample %}
-
-### Methods
-
-| Method | Description |
-| --- | --- |
-| `$().button('toggle')` | Toggles push state. Gives the button the appearance that it has been activated. |
-| `$().button('dispose')` | Destroys an element's button. |
+If you want to see more examples and properties please check the official [Bootstrap Documentation](http://getbootstrap.com/docs/4.0/components/buttons/)
