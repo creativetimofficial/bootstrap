@@ -33,6 +33,17 @@ We use [jQuery's slim build](https://blog.jquery.com/2016/06/09/jquery-3-0-final
 <script src="{{ site.cdn.jquery }}" integrity="{{ site.cdn.jquery_hash }}" crossorigin="anonymous"></script>
 <script src="{{ site.cdn.popper }}" integrity="{{ site.cdn.popper_hash }}" crossorigin="anonymous"></script>
 <script src="{{ site.cdn.js }}" integrity="{{ site.cdn.js_hash }}" crossorigin="anonymous"></script>
+<script src="{{ site.baseurl }}/assets/js/vendor/material-kit-pro.js"></script>
+
+<!-- Plugins -->
+
+<script src="{{ site.baseurl }}/assets/js/plugins/moment.min.js"></script>
+<script src="{{ site.baseurl }}/assets/js/plugins/jasny-bootstrap.min.js"></script>
+<script src="{{ site.baseurl }}/assets/js/plugins/bootstrap-selectpicker.js"></script>
+<script src="{{ site.baseurl }}/assets/js/plugins/bootstrap-tagsinput.js"></script>
+<script src="{{ site.baseurl }}/assets/js/plugins/nouislider.min.js"></script>
+<script src="{{ site.baseurl }}/assets/js/plugins/bootstrap-datetimepicker.min.js"></script>
+
 {% endhighlight %}
 
 Curious which components explicitly require jQuery, our JS, and Popper.js? Click the show components link below. If you're at all unsure about the general page structure, keep reading for an example page template.
@@ -67,6 +78,10 @@ Be sure to have your pages set up with the latest design and development standar
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{ site.cdn.css }}" integrity="{{ site.cdn.css_hash }}" crossorigin="anonymous">
+
+    <!-- Material Kit CSS -->
+    <link rel="stylesheet" href="/assets/css/material-kit.css">
+
   </head>
   <body>
     <h1>Hello, world!</h1>
@@ -76,6 +91,18 @@ Be sure to have your pages set up with the latest design and development standar
     <script src="{{ site.cdn.jquery }}" integrity="{{ site.cdn.jquery_hash }}" crossorigin="anonymous"></script>
     <script src="{{ site.cdn.popper }}" integrity="{{ site.cdn.popper_hash }}" crossorigin="anonymous"></script>
     <script src="{{ site.cdn.js }}" integrity="{{ site.cdn.js_hash }}" crossorigin="anonymous"></script>
+
+    <!-- Material Kit JavaScript -->
+    <script src="{{ site.baseurl }}/assets/js/vendor/material-kit-pro.js"></script>
+
+    <!-- Plugins -->
+    <script src="{{ site.baseurl }}/assets/js/plugins/moment.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/plugins/jasny-bootstrap.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/plugins/bootstrap-selectpicker.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/plugins/bootstrap-tagsinput.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/plugins/nouislider.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/plugins/bootstrap-datetimepicker.min.js"></script>
+
   </body>
 </html>
 {% endhighlight %}
