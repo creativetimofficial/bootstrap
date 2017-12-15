@@ -195,11 +195,23 @@
             <a href="/docs/4.0/components/collapse/">
               Collapse
             </a></li><li>
+            <a href="/docs/4.0/components/colors/">
+              Colors
+            </a></li><li>
             <a href="/docs/4.0/components/dropdowns/">
               Dropdowns
             </a></li><li>
             <a href="/docs/4.0/components/forms/">
               Forms
+            </a></li><li>
+            <a href="/docs/4.0/components/google-maps/">
+              Google Maps
+            </a></li><li>
+            <a href="/docs/4.0/components/info-areas/">
+              Info Areas
+            </a></li><li>
+            <a href="/docs/4.0/components/material-icons/">
+              Material Icons
             </a></li><li>
             <a href="/docs/4.0/components/modal/">
               Modal
@@ -213,14 +225,17 @@
             <a href="/docs/4.0/components/pagination/">
               Pagination
             </a></li><li>
+            <a href="/docs/4.0/components/parallax/">
+              Parallax
+            </a></li><li>
             <a href="/docs/4.0/components/popovers/">
               Popovers
             </a></li><li>
             <a href="/docs/4.0/components/progress/">
               Progress
             </a></li><li>
-            <a href="/docs/4.0/components/scrollspy/">
-              Scrollspy
+            <a href="/docs/4.0/components/tables/">
+              Tables
             </a></li><li>
             <a href="/docs/4.0/components/tooltips/">
               Tooltips
@@ -237,8 +252,20 @@
             <a href="/docs/4.0/plugins/datetimepicker/">
               DateTimePicker
             </a></li><li>
+            <a href="/docs/4.0/plugins/fileupload-jasny/">
+              FileUpload Jasny
+            </a></li><li>
             <a href="/docs/4.0/plugins/full-calendar/">
               Full calendar
+            </a></li><li>
+            <a href="/docs/4.0/plugins/jquery-tagsinput/">
+              jQuery Tagsinput
+            </a></li><li>
+            <a href="/docs/4.0/plugins/select-bootstrap/">
+              Select Bootstrap
+            </a></li><li>
+            <a href="/docs/4.0/plugins/sliders/">
+              Sliders
             </a></li><li>
             <a href="/docs/4.0/plugins/wizard/">
               Wizard
@@ -434,7 +461,15 @@
 <script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
 
 <script src="/assets/js/vendor/popper.min.js"></script>
-<script src="/assets/js/plugins/jasny-bootstrap.min.js"></script><script src="/dist/js/bootstrap.js"></script><script src="/assets/js/vendor/anchor.min.js"></script>
+<script src="/assets/js/vendor/material-kit-pro.js"></script>
+
+<!-- plugins -->
+<script src="/assets/js/plugins/moment.min.js"></script>
+<script src="/assets/js/plugins/jasny-bootstrap.min.js"></script>
+<script src="/assets/js/plugins/bootstrap-selectpicker.js"></script>
+<script src="/assets/js/plugins/bootstrap-tagsinput.js"></script>
+<script src="/assets/js/plugins/nouislider.min.js"></script>
+<script src="/assets/js/plugins/bootstrap-datetimepicker.min.js"></script><script src="/dist/js/bootstrap.js"></script><script src="/assets/js/vendor/anchor.min.js"></script>
   <script src="/assets/js/vendor/clipboard.min.js"></script>
   <script src="/assets/js/vendor/holder.min.js"></script>
   <script src="/assets/js/src/application.js"></script>
@@ -448,6 +483,34 @@
     fg: 'rgba(255,255,255,.75)',
     font: 'Helvetica',
     fontweight: 'normal'
+  });
+
+  $(document).ready(function(){
+      materialKit.initFormExtendedDatetimepickers();
+
+
+    // Sliders for demo purpose in refine cards section
+    var slider = document.getElementById('sliderRegular');
+
+    noUiSlider.create(slider, {
+      start: 40,
+      connect: [true,false],
+      range: {
+          min: 0,
+          max: 100
+      }
+    });
+
+    var slider2 = document.getElementById('sliderDouble');
+
+    noUiSlider.create(slider2, {
+      start: [ 20, 60 ],
+      connect: true,
+      range: {
+          min:  0,
+          max:  100
+      }
+    });
   });
 </script>
 

@@ -2,7 +2,15 @@
 <script>window.jQuery || document.write('<script src="{{ site.baseurl }}/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
 
 <script src="{{ site.baseurl }}/assets/js/vendor/popper.min.js"></script>
+<script src="{{ site.baseurl }}/assets/js/vendor/material-kit-pro.js"></script>
+
+<!-- plugins -->
+<script src="{{ site.baseurl }}/assets/js/plugins/moment.min.js"></script>
 <script src="{{ site.baseurl }}/assets/js/plugins/jasny-bootstrap.min.js"></script>
+<script src="{{ site.baseurl }}/assets/js/plugins/bootstrap-selectpicker.js"></script>
+<script src="{{ site.baseurl }}/assets/js/plugins/bootstrap-tagsinput.js"></script>
+<script src="{{ site.baseurl }}/assets/js/plugins/nouislider.min.js"></script>
+<script src="{{ site.baseurl }}/assets/js/plugins/bootstrap-datetimepicker.min.js"></script>
 
 {%- if site.github -%}
   <script src="{{ site.baseurl }}/dist/js/bootstrap.min.js"></script>
@@ -30,5 +38,33 @@
     fg: 'rgba(255,255,255,.75)',
     font: 'Helvetica',
     fontweight: 'normal'
+  });
+
+  $(document).ready(function(){
+      materialKit.initFormExtendedDatetimepickers();
+
+
+    // Sliders for demo purpose in refine cards section
+    var slider = document.getElementById('sliderRegular');
+
+    noUiSlider.create(slider, {
+      start: 40,
+      connect: [true,false],
+      range: {
+          min: 0,
+          max: 100
+      }
+    });
+
+    var slider2 = document.getElementById('sliderDouble');
+
+    noUiSlider.create(slider2, {
+      start: [ 20, 60 ],
+      connect: true,
+      range: {
+          min:  0,
+          max:  100
+      }
+    });
   });
 </script>

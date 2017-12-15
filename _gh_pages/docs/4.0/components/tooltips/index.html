@@ -195,11 +195,23 @@
             <a href="/docs/4.0/components/collapse/">
               Collapse
             </a></li><li>
+            <a href="/docs/4.0/components/colors/">
+              Colors
+            </a></li><li>
             <a href="/docs/4.0/components/dropdowns/">
               Dropdowns
             </a></li><li>
             <a href="/docs/4.0/components/forms/">
               Forms
+            </a></li><li>
+            <a href="/docs/4.0/components/google-maps/">
+              Google Maps
+            </a></li><li>
+            <a href="/docs/4.0/components/info-areas/">
+              Info Areas
+            </a></li><li>
+            <a href="/docs/4.0/components/material-icons/">
+              Material Icons
             </a></li><li>
             <a href="/docs/4.0/components/modal/">
               Modal
@@ -213,14 +225,17 @@
             <a href="/docs/4.0/components/pagination/">
               Pagination
             </a></li><li>
+            <a href="/docs/4.0/components/parallax/">
+              Parallax
+            </a></li><li>
             <a href="/docs/4.0/components/popovers/">
               Popovers
             </a></li><li>
             <a href="/docs/4.0/components/progress/">
               Progress
             </a></li><li>
-            <a href="/docs/4.0/components/scrollspy/">
-              Scrollspy
+            <a href="/docs/4.0/components/tables/">
+              Tables
             </a></li><li class="active bd-sidenav-active">
             <a href="/docs/4.0/components/tooltips/">
               Tooltips
@@ -237,8 +252,20 @@
             <a href="/docs/4.0/plugins/datetimepicker/">
               DateTimePicker
             </a></li><li>
+            <a href="/docs/4.0/plugins/fileupload-jasny/">
+              FileUpload Jasny
+            </a></li><li>
             <a href="/docs/4.0/plugins/full-calendar/">
               Full calendar
+            </a></li><li>
+            <a href="/docs/4.0/plugins/jquery-tagsinput/">
+              jQuery Tagsinput
+            </a></li><li>
+            <a href="/docs/4.0/plugins/select-bootstrap/">
+              Select Bootstrap
+            </a></li><li>
+            <a href="/docs/4.0/plugins/sliders/">
+              Sliders
             </a></li><li>
             <a href="/docs/4.0/plugins/wizard/">
               Wizard
@@ -250,8 +277,6 @@
         
           <div class="d-none d-xl-block col-xl-2 bd-toc">
             <ul class="section-nav">
-<li class="toc-entry toc-h2"><a href="#overview">Overview</a></li>
-<li class="toc-entry toc-h2"><a href="#example-enable-tooltips-everywhere">Example: Enable tooltips everywhere</a></li>
 <li class="toc-entry toc-h2"><a href="#examples">Examples</a>
 <ul>
 <li class="toc-entry toc-h3"><a href="#static-demo">Static demo</a></li>
@@ -263,28 +288,9 @@
 <li class="toc-entry toc-h3"><a href="#markup">Markup</a>
 <ul>
 <li class="toc-entry toc-h4"><a href="#making-tooltips-work-for-keyboard-and-assistive-technology-users">Making tooltips work for keyboard and assistive technology users</a></li>
-</ul>
-</li>
-<li class="toc-entry toc-h3"><a href="#options">Options</a>
-<ul>
 <li class="toc-entry toc-h4"><a href="#data-attributes-for-individual-tooltips">Data attributes for individual tooltips</a></li>
 </ul>
 </li>
-<li class="toc-entry toc-h3"><a href="#methods">Methods</a>
-<ul>
-<li class="toc-entry toc-h4"><a href="#asynchronous-methods-and-transitions">Asynchronous methods and transitions</a></li>
-<li class="toc-entry toc-h4"><a href="#tooltipoptions">$().tooltip(options)</a></li>
-<li class="toc-entry toc-h4"><a href="#tooltipshow">.tooltip('show')</a></li>
-<li class="toc-entry toc-h4"><a href="#tooltiphide">.tooltip('hide')</a></li>
-<li class="toc-entry toc-h4"><a href="#tooltiptoggle">.tooltip('toggle')</a></li>
-<li class="toc-entry toc-h4"><a href="#tooltipdispose">.tooltip('dispose')</a></li>
-<li class="toc-entry toc-h4"><a href="#tooltipenable">.tooltip('enable')</a></li>
-<li class="toc-entry toc-h4"><a href="#tooltipdisable">.tooltip('disable')</a></li>
-<li class="toc-entry toc-h4"><a href="#tooltiptoggleenabled">.tooltip('toggleEnabled')</a></li>
-<li class="toc-entry toc-h4"><a href="#tooltipupdate">.tooltip('update')</a></li>
-</ul>
-</li>
-<li class="toc-entry toc-h3"><a href="#events">Events</a></li>
 </ul>
 </li>
 </ul>
@@ -294,33 +300,7 @@
         <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
           <h1 class="bd-title" id="content">Tooltips</h1>
           <p class="bd-lead">Documentation and examples for adding custom Bootstrap tooltips with CSS and JavaScript using CSS3 for animations and data-attributes for local title storage.</p>
-          <h2 id="overview">Overview</h2>
-
-<p>Things to know when using the tooltip plugin:</p>
-
-<ul>
-  <li>Tooltips rely on the 3rd party library <a href="https://popper.js.org/">Popper.js</a> for positioning. You must include <a href="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js">popper.min.js</a> before bootstrap.js or use <code class="highlighter-rouge">bootstrap.bundle.min.js</code> / <code class="highlighter-rouge">bootstrap.bundle.js</code> which contains Popper.js in order for tooltips to work!</li>
-  <li>If you’re building our JavaScript from source, it <a href="/docs/4.0/getting-started/javascript/#util">requires <code class="highlighter-rouge">util.js</code></a>.</li>
-  <li>Tooltips are opt-in for performance reasons, so <strong>you must initialize them yourself</strong>.</li>
-  <li>Tooltips with zero-length titles are never displayed.</li>
-  <li>Specify <code class="highlighter-rouge">container: 'body'</code> to avoid rendering problems in more complex components (like our input groups, button groups, etc).</li>
-  <li>Triggering tooltips on hidden elements will not work.</li>
-  <li>Tooltips for <code class="highlighter-rouge">.disabled</code> or <code class="highlighter-rouge">disabled</code> elements must be triggered on a wrapper element.</li>
-  <li>When triggered from hyperlinks that span multiple lines, tooltips will be centered. Use <code class="highlighter-rouge">white-space: nowrap;</code> on your <code class="highlighter-rouge">&lt;a&gt;</code>s to avoid this behavior.</li>
-  <li>Tooltips must be hidden before their corresponding elements have been removed from the DOM.</li>
-</ul>
-
-<p>Got all that? Great, let’s see how they work with some examples.</p>
-
-<h2 id="example-enable-tooltips-everywhere">Example: Enable tooltips everywhere</h2>
-
-<p>One way to initialize all tooltips on a page would be to select them by their <code class="highlighter-rouge">data-toggle</code> attribute:</p>
-
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
-  <span class="nx">$</span><span class="p">(</span><span class="s1">'[data-toggle="tooltip"]'</span><span class="p">).</span><span class="nx">tooltip</span><span class="p">()</span>
-<span class="p">})</span></code></pre></figure>
-
-<h2 id="examples">Examples</h2>
+          <h2 id="examples">Examples</h2>
 
 <p>Hover over the links below to see tooltips:</p>
 
@@ -422,216 +402,13 @@
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
-<h3 id="options">Options</h3>
-
-<p>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code class="highlighter-rouge">data-</code>, as in <code class="highlighter-rouge">data-animation=""</code>.</p>
-
-<table class="table table-bordered table-striped table-responsive">
-  <thead>
-    <tr>
-      <th style="width: 100px;">Name</th>
-      <th style="width: 100px;">Type</th>
-      <th style="width: 50px;">Default</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>animation</td>
-      <td>boolean</td>
-      <td>true</td>
-      <td>Apply a CSS fade transition to the tooltip</td>
-    </tr>
-    <tr>
-      <td>container</td>
-      <td>string | element | false</td>
-      <td>false</td>
-      <td>
-        <p>Appends the tooltip to a specific element. Example: <code>container: 'body'</code>. This option is particularly useful in that it allows you to position the tooltip in the flow of the document near the triggering element - which will prevent the tooltip from floating away from the triggering element during a window resize.</p>
-      </td>
-    </tr>
-    <tr>
-      <td>delay</td>
-      <td>number | object</td>
-      <td>0</td>
-      <td>
-        <p>Delay showing and hiding the tooltip (ms) - does not apply to manual trigger type</p>
-        <p>If a number is supplied, delay is applied to both hide/show</p>
-        <p>Object structure is: <code>delay: { "show": 500, "hide": 100 }</code></p>
-      </td>
-    </tr>
-    <tr>
-      <td>html</td>
-      <td>boolean</td>
-      <td>false</td>
-      <td>
-        <p>Allow HTML in the tooltip.</p>
-        <p>If true, HTML tags in the tooltip's <code>title</code> will be rendered in the tooltip. If false, jQuery's <code>text</code> method will be used to insert content into the DOM.</p>
-        <p>Use text if you're worried about XSS attacks.</p>
-      </td>
-    </tr>
-    <tr>
-      <td>placement</td>
-      <td>string | function</td>
-      <td>'top'</td>
-      <td>
-        <p>How to position the tooltip - auto | top | bottom | left | right.<br />When <code>auto</code> is specified, it will dynamically reorient the tooltip.</p>
-        <p>When a function is used to determine the placement, it is called with the tooltip DOM node as its first argument and the triggering element DOM node as its second. The <code>this</code> context is set to the tooltip instance.</p>
-      </td>
-    </tr>
-    <tr>
-      <td>selector</td>
-      <td>string | false</td>
-      <td>false</td>
-      <td>If a selector is provided, tooltip objects will be delegated to the specified targets. In practice, this is used to enable dynamic HTML content to have popovers added. See <a href="https://github.com/twbs/bootstrap/issues/4215">this</a> and <a href="https://jsbin.com/zopod/1/edit">an informative example</a>.</td>
-    </tr>
-    <tr>
-      <td>template</td>
-      <td>string</td>
-      <td><code>'&lt;div class="tooltip" role="tooltip"&gt;&lt;div class="arrow"&gt;&lt;/div&gt;&lt;div class="tooltip-inner"&gt;&lt;/div&gt;&lt;/div&gt;'</code></td>
-      <td>
-        <p>Base HTML to use when creating the tooltip.</p>
-        <p>The tooltip's <code>title</code> will be injected into the <code>.tooltip-inner</code>.</p>
-        <p><code>.arrow</code> will become the tooltip's arrow.</p>
-        <p>The outermost wrapper element should have the <code>.tooltip</code> class.</p>
-      </td>
-    </tr>
-    <tr>
-      <td>title</td>
-      <td>string | element | function</td>
-      <td>''</td>
-      <td>
-        <p>Default title value if <code>title</code> attribute isn't present.</p>
-        <p>If a function is given, it will be called with its <code>this</code> reference set to the element that the tooltip is attached to.</p>
-      </td>
-    </tr>
-    <tr>
-      <td>trigger</td>
-      <td>string</td>
-      <td>'hover focus'</td>
-      <td>How tooltip is triggered - click | hover | focus | manual. You may pass multiple triggers; separate them with a space. `manual` cannot be combined with any other trigger.</td>
-    </tr>
-    <tr>
-      <td>offset</td>
-      <td>number | string</td>
-      <td>0</td>
-      <td>Offset of the tooltip relative to its target. For more information refer to Popper.js's <a href="https://popper.js.org/popper-documentation.html#modifiers..offset.offset">offset docs</a>.</td>
-    </tr>
-    <tr>
-      <td>fallbackPlacement</td>
-      <td>string | array</td>
-      <td>'flip'</td>
-      <td>Allow to specify which position Popper will use on fallback. For more information refer to
-      Popper.js's <a href="https://popper.js.org/popper-documentation.html#modifiers..flip.behavior">behavior docs</a></td>
-    </tr>
-  </tbody>
-</table>
-
 <div class="bd-callout bd-callout-info">
 <h4 id="data-attributes-for-individual-tooltips">Data attributes for individual tooltips</h4>
 
 <p>Options for individual tooltips can alternatively be specified through the use of data attributes, as explained above.</p>
 </div>
 
-<h3 id="methods">Methods</h3>
-
-<div class="bd-callout bd-callout-danger">
-<h4 id="asynchronous-methods-and-transitions">Asynchronous methods and transitions</h4>
-
-<p>All API methods are <strong>asynchronous</strong> and start a <strong>transition</strong>. They return to the caller as soon as the transition is started but <strong>before it ends</strong>. In addition, a method call on a <strong>transitioning component will be ignored</strong>.</p>
-
-<p><a href="/docs/4.0/getting-started/javascript/">See our JavaScript documentation for more information.</a></p>
-</div>
-
-<h4 id="tooltipoptions"><code class="highlighter-rouge">$().tooltip(options)</code></h4>
-
-<p>Attaches a tooltip handler to an element collection.</p>
-
-<h4 id="tooltipshow"><code class="highlighter-rouge">.tooltip('show')</code></h4>
-
-<p>Reveals an element’s tooltip. <strong>Returns to the caller before the tooltip has actually been shown</strong> (i.e. before the <code class="highlighter-rouge">shown.bs.tooltip</code> event occurs). This is considered a “manual” triggering of the tooltip. Tooltips with zero-length titles are never displayed.</p>
-
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">'#element'</span><span class="p">).</span><span class="nx">tooltip</span><span class="p">(</span><span class="s1">'show'</span><span class="p">)</span></code></pre></figure>
-
-<h4 id="tooltiphide"><code class="highlighter-rouge">.tooltip('hide')</code></h4>
-
-<p>Hides an element’s tooltip. <strong>Returns to the caller before the tooltip has actually been hidden</strong> (i.e. before the <code class="highlighter-rouge">hidden.bs.tooltip</code> event occurs). This is considered a “manual” triggering of the tooltip.</p>
-
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">'#element'</span><span class="p">).</span><span class="nx">tooltip</span><span class="p">(</span><span class="s1">'hide'</span><span class="p">)</span></code></pre></figure>
-
-<h4 id="tooltiptoggle"><code class="highlighter-rouge">.tooltip('toggle')</code></h4>
-
-<p>Toggles an element’s tooltip. <strong>Returns to the caller before the tooltip has actually been shown or hidden</strong> (i.e. before the <code class="highlighter-rouge">shown.bs.tooltip</code> or <code class="highlighter-rouge">hidden.bs.tooltip</code> event occurs). This is considered a “manual” triggering of the tooltip.</p>
-
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">'#element'</span><span class="p">).</span><span class="nx">tooltip</span><span class="p">(</span><span class="s1">'toggle'</span><span class="p">)</span></code></pre></figure>
-
-<h4 id="tooltipdispose"><code class="highlighter-rouge">.tooltip('dispose')</code></h4>
-
-<p>Hides and destroys an element’s tooltip. Tooltips that use delegation (which are created using <a href="#options">the <code class="highlighter-rouge">selector</code> option</a>) cannot be individually destroyed on descendant trigger elements.</p>
-
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">'#element'</span><span class="p">).</span><span class="nx">tooltip</span><span class="p">(</span><span class="s1">'dispose'</span><span class="p">)</span></code></pre></figure>
-
-<h4 id="tooltipenable"><code class="highlighter-rouge">.tooltip('enable')</code></h4>
-
-<p>Gives an element’s tooltip the ability to be shown. <strong>Tooltips are enabled by default.</strong></p>
-
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">'#element'</span><span class="p">).</span><span class="nx">tooltip</span><span class="p">(</span><span class="s1">'enable'</span><span class="p">)</span></code></pre></figure>
-
-<h4 id="tooltipdisable"><code class="highlighter-rouge">.tooltip('disable')</code></h4>
-
-<p>Removes the ability for an element’s tooltip to be shown. The tooltip will only be able to be shown if it is re-enabled.</p>
-
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">'#element'</span><span class="p">).</span><span class="nx">tooltip</span><span class="p">(</span><span class="s1">'disable'</span><span class="p">)</span></code></pre></figure>
-
-<h4 id="tooltiptoggleenabled"><code class="highlighter-rouge">.tooltip('toggleEnabled')</code></h4>
-
-<p>Toggles the ability for an element’s tooltip to be shown or hidden.</p>
-
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">'#element'</span><span class="p">).</span><span class="nx">tooltip</span><span class="p">(</span><span class="s1">'toggleEnabled'</span><span class="p">)</span></code></pre></figure>
-
-<h4 id="tooltipupdate"><code class="highlighter-rouge">.tooltip('update')</code></h4>
-
-<p>Updates the position of an element’s tooltip.</p>
-
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">'#element'</span><span class="p">).</span><span class="nx">tooltip</span><span class="p">(</span><span class="s1">'update'</span><span class="p">)</span></code></pre></figure>
-
-<h3 id="events">Events</h3>
-
-<table class="table table-bordered table-striped table-responsive">
-  <thead>
-    <tr>
-      <th style="width: 150px;">Event Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>show.bs.tooltip</td>
-      <td>This event fires immediately when the <code>show</code> instance method is called.</td>
-    </tr>
-    <tr>
-      <td>shown.bs.tooltip</td>
-      <td>This event is fired when the tooltip has been made visible to the user (will wait for CSS transitions to complete).</td>
-    </tr>
-    <tr>
-      <td>hide.bs.tooltip</td>
-      <td>This event is fired immediately when the <code>hide</code> instance method has been called.</td>
-    </tr>
-    <tr>
-      <td>hidden.bs.tooltip</td>
-      <td>This event is fired when the tooltip has finished being hidden from the user (will wait for CSS transitions to complete).</td>
-    </tr>
-    <tr>
-      <td>inserted.bs.tooltip</td>
-      <td>This event is fired after the <code>show.bs.tooltip</code> event when the tooltip template has been added to the DOM.</td>
-    </tr>
-  </tbody>
-</table>
-
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">'#myTooltip'</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">'hidden.bs.tooltip'</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
-  <span class="c1">// do something…</span>
-<span class="p">})</span></code></pre></figure>
-
+<p>If you want to see more examples and properties please check the official <a href="http://getbootstrap.com/docs/4.0/components/tooltips/">Bootstrap Documentation</a></p>
 
         </main>
       </div>
@@ -641,7 +418,15 @@
 <script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
 
 <script src="/assets/js/vendor/popper.min.js"></script>
-<script src="/assets/js/plugins/jasny-bootstrap.min.js"></script><script src="/dist/js/bootstrap.js"></script><script src="/assets/js/vendor/anchor.min.js"></script>
+<script src="/assets/js/vendor/material-kit-pro.js"></script>
+
+<!-- plugins -->
+<script src="/assets/js/plugins/moment.min.js"></script>
+<script src="/assets/js/plugins/jasny-bootstrap.min.js"></script>
+<script src="/assets/js/plugins/bootstrap-selectpicker.js"></script>
+<script src="/assets/js/plugins/bootstrap-tagsinput.js"></script>
+<script src="/assets/js/plugins/nouislider.min.js"></script>
+<script src="/assets/js/plugins/bootstrap-datetimepicker.min.js"></script><script src="/dist/js/bootstrap.js"></script><script src="/assets/js/vendor/anchor.min.js"></script>
   <script src="/assets/js/vendor/clipboard.min.js"></script>
   <script src="/assets/js/vendor/holder.min.js"></script>
   <script src="/assets/js/src/application.js"></script>
@@ -655,6 +440,34 @@
     fg: 'rgba(255,255,255,.75)',
     font: 'Helvetica',
     fontweight: 'normal'
+  });
+
+  $(document).ready(function(){
+      materialKit.initFormExtendedDatetimepickers();
+
+
+    // Sliders for demo purpose in refine cards section
+    var slider = document.getElementById('sliderRegular');
+
+    noUiSlider.create(slider, {
+      start: 40,
+      connect: [true,false],
+      range: {
+          min: 0,
+          max: 100
+      }
+    });
+
+    var slider2 = document.getElementById('sliderDouble');
+
+    noUiSlider.create(slider2, {
+      start: [ 20, 60 ],
+      connect: true,
+      range: {
+          min:  0,
+          max:  100
+      }
+    });
   });
 </script>
 

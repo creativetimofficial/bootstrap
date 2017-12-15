@@ -12,20 +12,29 @@
     - title: Card
     - title: Carousel
     - title: Collapse
+    - title: Colors
     - title: Dropdowns
     - title: Forms
+    - title: Google Maps
+    - title: Info Areas
+    - title: Material Icons
     - title: Modal
     - title: Navs
     - title: Navbar
     - title: Pagination
+    - title: Parallax
     - title: Popovers
     - title: Progress
-    - title: Scrollspy
+    - title: Tables
     - title: Tooltips
     - title: Typography
 
 - title: Plugins
   pages:
     - title: DateTimePicker
+    - title: FileUpload Jasny
     - title: Full calendar
+    - title: jQuery Tagsinput
+    - title: Select Bootstrap
+    - title: Sliders
     - title: Wizard
