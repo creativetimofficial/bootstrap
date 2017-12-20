@@ -139,7 +139,7 @@ Place various form controls and components within a navbar with `.form-inline`.
                 <div class="form-group has-white">
                   <input type="text" class="form-control" placeholder="Search">
                 </div>
-                <button type="submit" class="btn btn-white btn-raised btn-fab btn-fab-mini">
+                <button type="submit" class="btn btn-white btn-raised btn-fab btn-fab-mini btn-round">
                     <i class="material-icons">search</i>
                 </button>
             </form>
@@ -237,7 +237,7 @@ Theming the navbar has never been easier thanks to the combination of theming cl
             <div class="form-group has-white">
               <input type="text" class="form-control" placeholder="Search">
             </div>
-            <button type="submit" class="btn btn-white btn-raised btn-fab btn-fab-mini">
+            <button type="submit" class="btn btn-white btn-raised btn-fab btn-fab-mini btn-round">
                 <i class="material-icons">search</i>
             </button>
         </form>
@@ -271,7 +271,7 @@ Theming the navbar has never been easier thanks to the combination of theming cl
           <div class="form-group has-white">
             <input type="text" class="form-control" placeholder="Search">
           </div>
-          <button type="submit" class="btn btn-white btn-raised btn-fab btn-fab-mini">
+          <button type="submit" class="btn btn-white btn-raised btn-fab btn-fab-mini btn-round">
               <i class="material-icons">search</i>
           </button>
       </form>
@@ -305,7 +305,7 @@ Theming the navbar has never been easier thanks to the combination of theming cl
         <div class="form-group has-white">
           <input type="text" class="form-control" placeholder="Search">
         </div>
-        <button type="submit" class="btn btn-white btn-raised btn-fab btn-fab-mini">
+        <button type="submit" class="btn btn-white btn-raised btn-fab btn-fab-mini btn-round">
             <i class="material-icons">search</i>
         </button>
     </form>
@@ -339,7 +339,7 @@ Theming the navbar has never been easier thanks to the combination of theming cl
         <div class="form-group has-white">
           <input type="text" class="form-control" placeholder="Search">
         </div>
-        <button type="submit" class="btn btn-white btn-raised btn-fab btn-fab-mini">
+        <button type="submit" class="btn btn-white btn-raised btn-fab btn-fab-mini btn-round">
             <i class="material-icons">search</i>
         </button>
     </form>
@@ -373,7 +373,7 @@ Theming the navbar has never been easier thanks to the combination of theming cl
         <div class="form-group has-white">
           <input type="text" class="form-control" placeholder="Search">
         </div>
-        <button type="submit" class="btn btn-white btn-raised btn-fab btn-fab-mini">
+        <button type="submit" class="btn btn-white btn-raised btn-fab btn-fab-mini btn-round">
             <i class="material-icons">search</i>
         </button>
     </form>
@@ -408,7 +408,7 @@ Theming the navbar has never been easier thanks to the combination of theming cl
             <div class="form-group has-white">
               <input type="text" class="form-control" placeholder="Search">
             </div>
-            <button type="submit" class="btn btn-white btn-raised btn-fab btn-fab-mini">
+            <button type="submit" class="btn btn-white btn-raised btn-fab btn-fab-mini btn-round">
                 <i class="material-icons">search</i>
             </button>
         </form>
@@ -442,7 +442,7 @@ Theming the navbar has never been easier thanks to the combination of theming cl
             <div class="form-group has-white">
               <input type="text" class="form-control" placeholder="Search">
             </div>
-            <button type="submit" class="btn btn-white btn-raised btn-fab btn-fab-mini">
+            <button type="submit" class="btn btn-white btn-raised btn-fab btn-fab-mini btn-round">
                 <i class="material-icons">search</i>
             </button>
         </form>
@@ -566,7 +566,7 @@ With no `.navbar-brand` shown in lowest breakpoint:
           <div class="form-group has-white">
             <input type="text" class="form-control" placeholder="Search">
           </div>
-          <button type="submit" class="btn btn-white btn-raised btn-fab btn-fab-mini">
+          <button type="submit" class="btn btn-white btn-raised btn-fab btn-fab-mini btn-round">
               <i class="material-icons">search</i>
           </button>
       </form>
@@ -601,7 +601,7 @@ With a brand name shown on the left and toggler on the right:
           <div class="form-group has-white">
             <input type="text" class="form-control" placeholder="Search">
           </div>
-          <button type="submit" class="btn btn-white btn-raised btn-fab btn-fab-mini">
+          <button type="submit" class="btn btn-white btn-raised btn-fab btn-fab-mini btn-round">
               <i class="material-icons">search</i>
           </button>
       </form>
@@ -636,7 +636,7 @@ With a toggler on the left and brand name on the right:
           <div class="form-group has-white">
             <input type="text" class="form-control" placeholder="Search">
           </div>
-          <button type="submit" class="btn btn-white btn-raised btn-fab btn-fab-mini">
+          <button type="submit" class="btn btn-white btn-raised btn-fab btn-fab-mini btn-round">
               <i class="material-icons">search</i>
           </button>
       </form>

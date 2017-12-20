@@ -131,7 +131,7 @@ Takes the basic nav from above and adds the `.nav-tabs` class to generate a tabb
 {% example html %}
 
 <div class="card card-nav-tabs card-plain">
-    <div class="card-header header-danger">
+    <div class="card-header card-header-danger">
         <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
         <div class="nav-tabs-navigation">
             <div class="nav-tabs-wrapper">
@@ -168,7 +168,7 @@ Takes the basic nav from above and adds the `.nav-tabs` class to generate a tabb
 #### Tabs with Icons on Card
 
 <div class="card card-nav-tabs">
-    <div class="card-header header-primary">
+    <div class="card-header card-header-primary">
         <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
         <div class="nav-tabs-navigation">
             <div class="nav-tabs-wrapper">
@@ -208,7 +208,7 @@ Takes the basic nav from above and adds the `.nav-tabs` class to generate a tabb
             </div>
         </div>
     </div>
-  </div>
+</div>
 
 ### Pills
 
@@ -219,7 +219,7 @@ Take that same HTML, but use `.nav-pills` instead:
 {% example html %}
 
 <ul class="nav nav-pills nav-pills-rose">
-  <li class="nav-item active"><a class="nav-link" href="#pill1" data-toggle="tab">Profile</a></li>
+  <li class="nav-item"><a class="nav-link active" href="#pill1" data-toggle="tab">Profile</a></li>
   <li class="nav-item"><a class="nav-link" href="#pill2" data-toggle="tab">Settings</a></li>
   <li class="nav-item"><a class="nav-link" href="#pill3" data-toggle="tab">Options</a></li>
 </ul>
@@ -244,31 +244,32 @@ Take that same HTML, but use `.nav-pills` instead:
 #### Vertical Tabs
 
 {% example html %}
+
 <div class="row">
-  <div class="col-md-4">
-      <ul class="nav nav-pills nav-pills-rose flex-column">
-        <li class="active"><a href="#tab1" data-toggle="tab">Profile</a></li>
-        <li><a href="#tab2" data-toggle="tab">Settings</a></li>
-        <li><a href="#tab3" data-toggle="tab">Options</a></li>
-      </ul>
-  </div>
-  <div class="col-md-8">
-      <div class="tab-content">
-          <div class="tab-pane active" id="tab1">
-            Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits.
-            <br><br>
-            Dramatically visualize customer directed convergence without revolutionary ROI.
-          </div>
-          <div class="tab-pane" id="tab2">
-            Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas.
-            <br><br>Dramatically maintain clicks-and-mortar solutions without functional solutions.
-          </div>
-          <div class="tab-pane" id="tab3">
-              Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas.
-              <br><br>Dynamically innovate resource-leveling customer service for state of the art customer service.
-          </div>
-      </div>
-  </div>
+    <div class="col-md-4">
+        <ul class="nav nav-pills nav-pills-rose flex-column">
+          <li class="nav-item"><a class="nav-link active" href="#tab1" data-toggle="tab">Profile</a></li>
+          <li class="nav-item"><a class="nav-link" href="#tab2" data-toggle="tab">Settings</a></li>
+          <li class="nav-item"><a class="nav-link" href="#tab3" data-toggle="tab">Options</a></li>
+        </ul>
+    </div>
+    <div class="col-md-8">
+        <div class="tab-content">
+            <div class="tab-pane active" id="tab1">
+              Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits.
+              <br><br>
+              Dramatically visualize customer directed convergence without revolutionary ROI.
+            </div>
+            <div class="tab-pane" id="tab2">
+              Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas.
+              <br><br>Dramatically maintain clicks-and-mortar solutions without functional solutions.
+            </div>
+            <div class="tab-pane" id="tab3">
+                Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas.
+                <br><br>Dynamically innovate resource-leveling customer service for state of the art customer service.
+            </div>
+        </div>
+    </div>
 </div>
 
 {% endexample %}
@@ -281,20 +282,20 @@ Take that same HTML, but use `.nav-pills` instead:
     <!--
         color-classes: "nav-pills-primary", "nav-pills-info", "nav-pills-success", "nav-pills-warning","nav-pills-danger"
     -->
-    <li>
-        <a href="#dashboard-1" role="tab" data-toggle="tab">
+    <li class="nav-item">
+        <a class="nav-link" href="#dashboard-1" role="tab" data-toggle="tab">
             <i class="material-icons">dashboard</i>
             Dashboard
         </a>
     </li>
-    <li class="active">
-        <a href="#schedule-1" role="tab" data-toggle="tab">
+    <li class="nav-item">
+        <a class="nav-link active" href="#schedule-1" role="tab" data-toggle="tab">
             <i class="material-icons">schedule</i>
             Schedule
         </a>
     </li>
-    <li>
-        <a href="#tasks-1" role="tab" data-toggle="tab">
+    <li class="nav-item">
+        <a class="nav-link" href="#tasks-1" role="tab" data-toggle="tab">
             <i class="material-icons">list</i>
             Tasks
         </a>
@@ -318,32 +319,6 @@ Take that same HTML, but use `.nav-pills` instead:
 
 {% endexample %}
 
-
-### Tabs with dropdowns
-
-{% example html %}
-<ul class="nav nav-tabs">
-  <li class="nav-item">
-    <a class="nav-link active" href="#">Active</a>
-  </li>
-  <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-    <div class="dropdown-menu">
-      <a class="dropdown-item" href="#">Action</a>
-      <a class="dropdown-item" href="#">Another action</a>
-      <a class="dropdown-item" href="#">Something else here</a>
-      <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="#">Separated link</a>
-    </div>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link disabled" href="#">Disabled</a>
-  </li>
-</ul>
-{% endexample %}
 
 ### Pills with dropdowns
 

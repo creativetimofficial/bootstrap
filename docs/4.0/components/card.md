@@ -89,9 +89,9 @@ Create lists of content in a card with a flush list group.
 {% endexample %}
 
 {% example html %}
-<div class="card" style="width: 20rem;">
-  <div class="card-header">
-    Featured
+<div class="card card-nav-tabs" style="width: 20rem;">
+  <div class="card-header card-header-danger">
+    Featured  
   </div>
   <ul class="list-group list-group-flush">
     <li class="list-group-item">Cras justo odio</li>
@@ -106,8 +106,8 @@ Create lists of content in a card with a flush list group.
 Add an optional header and/or footer within a card.
 
 {% example html %}
-<div class="card">
-  <div class="card-header">
+<div class="card card-nav-tabs">
+  <div class="card-header card-header-warning">
     Featured
   </div>
   <div class="card-body">
@@ -121,8 +121,8 @@ Add an optional header and/or footer within a card.
 Card headers can be styled by adding `.card-header` to `<h*>` elements.
 
 {% example html %}
-<div class="card">
-  <h4 class="card-header">Featured</h4>
+<div class="card card-nav-tabs">
+  <h4 class="card-header card-header-info">Featured</h4>
   <div class="card-body">
     <h4 class="card-title">Special title treatment</h4>
     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
@@ -132,8 +132,8 @@ Card headers can be styled by adding `.card-header` to `<h*>` elements.
 {% endexample %}
 
 {% example html %}
-<div class="card">
-  <div class="card-header">
+<div class="card card-nav-tabs">
+  <div class="card-header card-header-success">
     Quote
   </div>
   <div class="card-body">
@@ -146,8 +146,8 @@ Card headers can be styled by adding `.card-header` to `<h*>` elements.
 {% endexample %}
 
 {% example html %}
-<div class="card text-center">
-  <div class="card-header">
+<div class="card card-nav-tabs text-center">
+  <div class="card-header card-header-primary">
     Featured
   </div>
   <div class="card-body">
@@ -197,8 +197,8 @@ Add some navigation to a card's header (or block) with Bootstrap's [nav componen
 
 {% example html %}
 <div class="card text-center">
-  <div class="card-header">
-    <ul class="nav nav-tabs card-header-tabs">
+  <div class="card-header card-header-rose">
+    <ul class="nav nav-tabs">
       <li class="nav-item">
         <a class="nav-link active" href="#">Active</a>
       </li>
@@ -290,48 +290,47 @@ Turn an image into a card background and overlay your card's text. Depending on 
 {% example html %}
 
 <div class="card card-blog">
-  <div class="card-image">
-    <a href="#pablo">
-      <img class="img" src="https://images.unsplash.com/photo-1511439817358-bee8e21790b5?auto=format&fit=crop&w=750&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" />
-      <div class="card-title">
-        This Summer Will be Awesome
-      </div>
-    </a>
-  </div>
-
-  <div class="card-content">
-    <h6 class="category text-info">Fashion</h6>
-    <p class="card-description">
-      Don't be scared of the truth because we need to restart the human foundation in truth And I love you like Kanye loves Kanye I love Rick Owens’ bed design but the back is...
-    </p>
-  </div>
-</div>
-
-{% endexample %}
-
-{% example html %}
-
-<div class="card">
-    <div class="card-content content-info">
-      <h5 class="category-social">
-        <i class="fa fa-twitter"></i> Twitter
-      </h5>
-      <h4 class="card-title">
-        <a href="#pablo">"You Don't Have to Sacrifice Joy to Build a Fabulous Business and Life"</a>
-      </h4>
-      <div class="footer">
-                        <div class="author">
-                            <a href="#pablo">
-                               <img src="https://images.unsplash.com/photo-1476493279419-b785d41e38d8?auto=format&fit=crop&w=750&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" alt="..." class="avatar img-raised">
-                               <span>Tania Andrew</span>
-                            </a>
-                        </div>
-                       <div class="stats">
-                            <i class="material-icons">favorite</i> 2.4K &middot;
-          <i class="material-icons">share</i> 45
-                        </div>
-                    </div>
+    <div class="card-header card-header-image">
+        <a href="#pablo">
+            <img class="img" src="https://images.unsplash.com/photo-1511439817358-bee8e21790b5?auto=format&fit=crop&w=750&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D">
+            <div class="card-title">
+                This Summer Will be Awesome
+            </div>
+        </a>
     </div>
+    <div class="card-body">
+        <h6 class="card-category text-info">Fashion</h6>
+        <p class="card-description">
+            Don&apos;t be scared of the truth because we need to restart the human foundation in truth And I love you like Kanye loves Kanye I love Rick Owens&#x2019; bed design but the back is...
+        </p>
+    </div>
+</div>
+{% endexample %}
+
+{% example html %}
+
+  <div class="card">
+      <div class="card-body bg-info">
+          <h5 class="card-category card-category-social">
+              <i class="fa fa-twitter"></i> Twitter
+          </h5>
+          <h4 class="card-title">
+              <a href="#pablo">&quot;You Don&apos;t Have to Sacrifice Joy to Build a Fabulous Business and Life&quot;</a>
+          </h4>
+
+          <div class="card-stats">
+              <div class="author">
+                  <a href="#pablo">
+                     <img src="https://images.unsplash.com/photo-1476493279419-b785d41e38d8?auto=format&fit=crop&w=750&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" alt="..." class="avatar img-raised">
+                     <span>Tania Andrew</span>
+                  </a>
+              </div>
+             <div class="stats ml-auto">
+                  <i class="material-icons">favorite</i> 2.4K &#xB7;
+                  <i class="material-icons">share</i> 45
+              </div>
+          </div>
+      </div>
   </div>
 
 {% endexample %}
@@ -339,29 +338,28 @@ Turn an image into a card background and overlay your card's text. Depending on 
 {% example html %}
 
 <div class="card">
-  <div class="card-content">
-    <h6 class="category text-danger">
-      <i class="material-icons">trending_up</i> Trending
-    </h6>
-    <h4 class="card-title">
-      <a href="#pablo">To Grow Your Business Start Focusing on Your Employees</a>
-    </h4>
-    <div class="footer">
-                      <div class="author">
-                          <a href="#pablo">
-                             <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=334&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" alt="..." class="avatar img-raised">
-                             <span>Lord Alex</span>
-                          </a>
-                      </div>
-                     <div class="stats">
-                          <i class="material-icons">favorite</i> 342 &middot;
-        <i class="material-icons">chat_bubble</i> 45
-                      </div>
-                  </div>
-  </div>
+  <div class="card-body ">
+        <h6 class="card-category text-danger">
+            <i class="material-icons">trending_up</i> Trending
+        </h6>
+        <h4 class="card-title">
+            <a href="#pablo">To Grow Your Business Start Focusing on Your Employees</a>
+        </h4>
 
-</div>
-
+    </div>
+    <div class="card-footer ">
+            <div class="author">
+                <a href="#pablo">
+                   <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=334&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" alt="..." class="avatar img-raised">
+                   <span>Lord Alex</span>
+                </a>
+            </div>
+           <div class="stats ml-auto">
+                <i class="material-icons">favorite</i> 342 &#xB7;
+                <i class="material-icons">chat_bubble</i> 45
+            </div>
+        </div>
+      </div>
 {% endexample %}
 
 
@@ -369,25 +367,30 @@ Turn an image into a card background and overlay your card's text. Depending on 
 
 {% example html %}
 
+
 <div class="card card-profile">
-  <div class="card-image">
-    <a href="#pablo">
-      <img class="img" src="https://images.unsplash.com/photo-1492447273231-0f8fecec1e3a?auto=format&fit=crop&w=334&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" />
-    </a>
-  </div>
-
-  <div class="card-content">
-    <h4 class="card-title">Alec Thompson</h4>
-    <h6 class="category text-gray">CEO / Co-Founder</h6>
-
-    <div class="footer">
-      <a href="#pablo" class="btn btn-just-icon btn-twitter btn-round"><i class="fa fa-twitter"></i></a>
-      <a href="#pablo" class="btn btn-just-icon btn-facebook btn-round"><i class="fa fa-facebook-square"></i></a>
-      <a href="#pablo" class="btn btn-just-icon btn-google btn-round"><i class="fa fa-google"></i></a>
+  <div class="card-header card-header-image">
+        <a href="#pablo">
+            <img class="img" src="https://images.unsplash.com/photo-1492447273231-0f8fecec1e3a?auto=format&fit=crop&w=334&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D">
+        </a>
     </div>
-  </div>
-</div>
 
+    <div class="card-body ">
+        <h4 class="card-title">Alec Thompson</h4>
+        <h6 class="card-category text-gray">CEO / Co-Founder</h6>
+    </div>
+    <div class="card-footer justify-content-center">
+        <a href="#pablo" class="btn btn-just-icon btn-link">
+            <i class="fa fa-twitter"></i>
+        </a>
+        <a href="#pablo" class="btn btn-just-icon btn-facebook btn-round">
+            <i class="fa fa-facebook-square"></i>
+        </a>
+        <a href="#pablo" class="btn btn-just-icon btn-google btn-round">
+            <i class="fa fa-google"></i>
+        </a>
+    </div>
+</div>
 {% endexample %}
 
 ### Full Background Card
@@ -395,19 +398,18 @@ Turn an image into a card background and overlay your card's text. Depending on 
 {% example html %}
 
 <div class="card card-background" style="background-image: url('https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=750&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D')">
-
-  <div class="card-content">
-    <h6 class="category text-info">Productivy Apps</h6>
+  <div class="card-body">
+    <h6 class="card-category text-info">Productivy Apps</h6>
     <a href="#pablo">
       <h3 class="card-title">The Best Productivity Apps on Market</h3>
-    </a>
-    <p class="card-description">
+      </a>
+      <p class="card-description">
       Don't be scared of the truth because we need to restart the human foundation in truth And I love you like Kanye loves Kanye I love Rick Owens’ bed design but the back is...
-    </p>
-    <a href="#pablo" class="btn btn-white btn-simple">
+      </p>
+    <a href="#pablo" class="btn btn-white btn-link">
       <i class="material-icons">subject</i> Read Article
     </a>
-    <a href="#pablo" class="btn btn-white btn-simple">
+    <a href="#pablo" class="btn btn-white btn-link">
       <i class="material-icons">watch_later</i> Watch Later
     </a>
   </div>
@@ -419,16 +421,15 @@ Turn an image into a card background and overlay your card's text. Depending on 
 
 {% example html %}
 
-<div class="card card-pricing">
-  <div class="card-content content-primary">
-    <div class="icon">
+<div class="card card-pricing"><div class="card-body bg-primary">
+  <div class="icon">
       <i class="material-icons">business</i>
-    </div>
-    <h3 class="card-title">$69</h3>
-    <p class="card-description">
+  </div>
+  <h3 class="card-title">$69</h3>
+  <p class="card-description">
       This is good if your company size is between 11 and 99 Persons.
-    </p>
-    <a href="#pablo" class="btn btn-white btn-round">Choose Plan</a>
+  </p>
+  <a href="#pablo" class="btn btn-white btn-round">Choose Plan</a>
   </div>
 </div>
 
@@ -439,39 +440,39 @@ Turn an image into a card background and overlay your card's text. Depending on 
 {% example html %}
 
 <div class="rotating-card-container">
-  <div class="card card-rotate card-background">
-    <div class="front front-background" style="background-image: url('https://images.unsplash.com/photo-1493787039806-2edcbe808750?auto=format&fit=crop&w=750&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D');">
-      <div class="card-content">
-        <h6 class="category text-info">Full Background Card</h6>
-        <a href="#pablo">
-          <h3 class="card-title">This Background Card Will Rotate on Hover</h3>
-        </a>
-        <p class="card-description">
-          Don't be scared of the truth because we need to restart the human foundation in truth And I love you like Kanye loves Kanye I love Rick Owens’ bed design but the back is...
-        </p>
-      </div>
-    </div>
-
-    <div class="back back-background" style="background-image: url('https://images.unsplash.com/photo-1493787039806-2edcbe808750?auto=format&fit=crop&w=750&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D');">
-      <div class="card-content">
-        <h5 class="card-title">
-          Manage Post
-        </h5>
-        <p class="card-description">As an Admin, you have shortcuts to edit, view or delete the posts.</p>
-        <div class="footer text-center">
-          <a href="#pablo" class="btn btn-info btn-just-icon btn-fill btn-round">
-            <i class="material-icons">subject</i>
-          </a>
-          <a href="#pablo" class="btn btn-success btn-just-icon btn-fill btn-round btn-wd">
-            <i class="material-icons">mode_edit</i>
-          </a>
-          <a href="#pablo" class="btn btn-danger btn-just-icon btn-fill btn-round">
-            <i class="material-icons">delete</i>
-          </a>
+    <div class="card card-rotate card-background">
+        <div class="front front-background" style="background-image:url('https://images.unsplash.com/photo-1493787039806-2edcbe808750?auto=format&fit=crop&w=750&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D');">
+            <div class="card-body">
+                <h6 class="card-category">Full Background Card</h6>
+                <a href="#pablo">
+                    <h3 class="card-title">This Background Card Will Rotate on Hover</h3>
+                </a>
+                <p class="card-description">
+                    Don't be scared of the truth because we need to restart the human foundation in truth And I love you like Kanye loves Kanye I love Rick Owens’ bed design but the back is...
+                </p>
+            </div>
         </div>
-      </div>
+
+        <div class="back back-background" style="background-image: url('https://images.unsplash.com/photo-1493787039806-2edcbe808750?auto=format&fit=crop&w=750&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D');">
+            <div class="card-body">
+                <h5 class="card-title">
+                    Manage Post
+                </h5>
+                <p class="card-description">As an Admin, you have shortcuts to edit, view or delete the posts.</p>
+                <div class="footer text-center">
+                    <a href="#pablo" class="btn btn-info btn-just-icon btn-fill btn-round">
+                        <i class="material-icons">subject</i>
+                    </a>
+                    <a href="#pablo" class="btn btn-success btn-just-icon btn-fill btn-round btn-wd">
+                        <i class="material-icons">mode_edit</i>
+                    </a>
+                    <a href="#pablo" class="btn btn-danger btn-just-icon btn-fill btn-round">
+                        <i class="material-icons">delete</i>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 
 {% endexample %}

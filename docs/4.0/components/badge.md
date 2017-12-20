@@ -12,7 +12,7 @@ Badges can be used as part of links or buttons to provide a counter.
 
 {% example html %}
 <button type="button" class="btn btn-primary">
-  Notifications <span class="badge badge-light">4</span>
+  Notifications <span class="badge badge-default">4</span>
 </button>
 {% endexample %}
 

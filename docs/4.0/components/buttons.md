@@ -28,7 +28,7 @@ Bootstrap includes several predefined button styles, each serving its own semant
 <button class="btn btn-primary btn-fab btn-fab-mini btn-round">
   <i class="material-icons">favorite</i>
 </button>
-<button class="btn btn-primary btn-simple">Simple</button>
+<button class="btn btn-primary btn-link">Simple</button>
 {% endexample %}
 
 ## Sizes
@@ -50,7 +50,7 @@ Fancy larger or smaller buttons? Add `.btn-lg` or `.btn-sm` for additional sizes
    <div class="col-md-3 social-buttons-demo">
      <h3><small> Default </small></h3>
     <button class="btn btn-social btn-fill btn-twitter">
-      <i class="fa fa-twitter"></i> Connect with Twitter
+      <i class="fa fa-twitter"></i> Connect
     </button><br>
     <button class="btn btn-social btn-fill btn-facebook">
       <i class="fa fa-facebook-square"></i> Share &middot; 2.2k
@@ -59,25 +59,25 @@ Fancy larger or smaller buttons? Add `.btn-lg` or `.btn-sm` for additional sizes
       <i class="fa fa-google-square"></i> Share on Google+
     </button><br>
     <button class="btn btn-social btn-fill btn-linkedin">
-      <i class="fa fa-linkedin-square"></i> Connect with Linkedin
+      <i class="fa fa-linkedin-square"></i> Connect
     </button><br>
     <button class="btn btn-social btn-fill btn-pinterest">
       <i class="fa fa-pinterest"></i> Pint it &middot; 212
     </button><br>
     <button class="btn btn-social btn-fill btn-youtube">
-      <i class="fa fa-youtube-play"></i> View on Youtube
+      <i class="fa fa-youtube-play"></i> View
     </button><br>
     <button class="btn btn-social btn-fill btn-tumblr">
       <i class="fa fa-tumblr-square"></i> Repost
     </button><br>
     <button class="btn btn-social btn-fill btn-github">
-      <i class="fa fa-github"></i> Connect with Github
+      <i class="fa fa-github"></i> Connect
     </button><br>
     <button class="btn btn-social btn-fill btn-behance">
       <i class="fa fa-behance-square"></i> Follow us
     </button><br>
     <button class="btn btn-social btn-fill btn-dribbble">
-      <i class="fa fa-dribbble"></i> Find us on Dribble
+      <i class="fa fa-dribbble"></i> Find us
     </button><br>
     <button class="btn btn-social btn-fill btn-reddit">
       <i class="fa fa-reddit"></i> Repost &middot; 232
@@ -157,73 +157,73 @@ Fancy larger or smaller buttons? Add `.btn-lg` or `.btn-sm` for additional sizes
    </div>
    <div class="col-md-1 social-buttons-demo">
      <h3><small>Simple</small></h3>
-    <button class="btn btn-simple btn-twitter">
+    <button class="btn btn-link btn-twitter">
       <i class="fa fa-twitter"></i>
     </button><br>
-    <button class="btn btn-simple btn-facebook">
+    <button class="btn btn-link btn-facebook">
       <i class="fa fa-facebook-square"> </i>
     </button><br>
-    <button class="btn btn-simple btn-google">
+    <button class="btn btn-link btn-google">
       <i class="fa fa-google"> </i>
     </button><br>
-    <button class="btn btn-simple btn-linkedin">
+    <button class="btn btn-link btn-linkedin">
       <i class="fa fa-linkedin-square"></i>
     </button><br>
-    <button class="btn btn-simple btn-pinterest">
+    <button class="btn btn-link btn-pinterest">
       <i class="fa fa-pinterest"></i>
     </button><br>
-    <button class="btn btn-simple btn-youtube">
+    <button class="btn btn-link btn-youtube">
       <i class="fa fa-youtube"> </i>
     </button><br>
-    <button class="btn btn-simple btn-tumblr">
+    <button class="btn btn-link btn-tumblr">
       <i class="fa fa-tumblr-square"> </i>
     </button><br>
-    <button class="btn btn-simple btn-github">
+    <button class="btn btn-link btn-github">
       <i class="fa fa-github"></i>
     </button><br>
-    <button class="btn btn-simple btn-behance">
+    <button class="btn btn-link btn-behance">
       <i class="fa fa-behance"></i>
     </button><br>
-    <button class="btn btn-simple btn-dribbble">
+    <button class="btn btn-link btn-dribbble">
       <i class="fa fa-dribbble"></i>
     </button><br>
-    <button class="btn btn-simple btn-reddit">
+    <button class="btn btn-link btn-reddit">
       <i class="fa fa-reddit"></i>
     </button><br>
    </div>
    <div class="col-md-3 social-buttons-demo">
      <h3><small>&nbsp;</small></h3>
-    <button class="btn btn-simple btn-twitter">
-      <i class="fa fa-twitter"></i> Connect with Twitter
+    <button class="btn btn-link btn-twitter">
+      <i class="fa fa-twitter"></i> Connect
     </button><br>
-    <button class="btn btn-simple btn-facebook">
+    <button class="btn btn-link btn-facebook">
       <i class="fa fa-facebook-square"></i> Share &middot; 2.2k
     </button><br>
-    <button class="btn btn-simple btn-google">
+    <button class="btn btn-link btn-google">
       <i class="fa fa-google-square"></i> Share on Google+
     </button><br>
-    <button class="btn btn-simple btn-linkedin">
-      <i class="fa fa-linkedin-square"></i> Connect with Linkedin
+    <button class="btn btn-link btn-linkedin">
+      <i class="fa fa-linkedin-square"></i> Connect
     </button><br>
-    <button class="btn btn-simple btn-pinterest">
+    <button class="btn btn-link btn-pinterest">
       <i class="fa fa-pinterest"></i> Pint it &middot; 212
     </button><br>
-    <button class="btn btn-simple btn-youtube">
-      <i class="fa fa-youtube-play"></i> View on Youtube
+    <button class="btn btn-link btn-youtube">
+      <i class="fa fa-youtube-play"></i> View
     </button><br>
-    <button class="btn btn-simple btn-tumblr">
+    <button class="btn btn-link btn-tumblr">
       <i class="fa fa-tumblr-square"></i> Repost
     </button><br>
-    <button class="btn btn-simple btn-github">
-      <i class="fa fa-github"></i> Connect with Github
+    <button class="btn btn-link btn-github">
+      <i class="fa fa-github"></i> Connect
     </button><br>
-    <button class="btn btn-simple btn-behance">
+    <button class="btn btn-link btn-behance">
       <i class="fa fa-behance-square"></i> Follow us
     </button><br>
-    <button class="btn btn-simple btn-dribbble">
-      <i class="fa fa-dribbble"></i> Find us on Dribble
+    <button class="btn btn-link btn-dribbble">
+      <i class="fa fa-dribbble"></i> Find us
     </button><br>
-    <button class="btn btn-simple btn-reddit">
+    <button class="btn btn-link btn-reddit">
       <i class="fa fa-reddit"></i> Repost &middot; 232
     </button><br>
    </div>

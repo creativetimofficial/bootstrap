@@ -216,7 +216,7 @@ When modals become too long for the user's viewport or device, they scroll indep
 
 </button>
 
-<div class="modal show" id="loginModal" tabindex="-1" role="">
+<div class="modal fade" id="loginModal" tabindex="-1" role="">
     <div class="modal-dialog modal-login" role="document">
         <div class="modal-content">
             <div class="card card-signup card-plain">
@@ -225,13 +225,13 @@ When modals become too long for the user's viewport or device, they scroll indep
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="material-icons">clear</i></button>
                         <h4 class="card-title">Log in</h4>
                         <div class="social-line">
-                            <a href="#pablo" class="btn btn-just-icon btn-simple">
+                            <a href="#pablo" class="btn btn-just-icon btn-link">
                                 <i class="fa fa-facebook-square"></i>
                             </a>
-                            <a href="#pablo" class="btn btn-just-icon btn-simple">
+                            <a href="#pablo" class="btn btn-just-icon btn-link">
                                 <i class="fa fa-twitter"></i>
                             </a>
-                            <a href="#pablo" class="btn btn-just-icon btn-simple">
+                            <a href="#pablo" class="btn btn-just-icon btn-link">
                                 <i class="fa fa-google-plus"></i>
                             <div class="ripple-container"></div></a>
                         </div>
@@ -272,7 +272,7 @@ When modals become too long for the user's viewport or device, they scroll indep
                     </form>
                 </div>
                 <div class="modal-footer justify-content-center">
-                    <a href="#pablo" class="btn btn-primary btn-simple btn-wd btn-lg">Get Started</a>
+                    <a href="#pablo" class="btn btn-primary btn-link btn-wd btn-lg">Get Started</a>
                 </div>
             </div>
         </div>

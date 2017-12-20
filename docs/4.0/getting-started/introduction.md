@@ -34,6 +34,7 @@ We use [jQuery's slim build](https://blog.jquery.com/2016/06/09/jquery-3-0-final
 <script src="{{ site.cdn.popper }}" integrity="{{ site.cdn.popper_hash }}" crossorigin="anonymous"></script>
 <script src="{{ site.cdn.js }}" integrity="{{ site.cdn.js_hash }}" crossorigin="anonymous"></script>
 <script src="{{ site.baseurl }}/assets/js/vendor/material-kit-pro.js"></script>
+<script src="{{ site.baseurl }}/assets/js/vendor/bootstrap-material-design.js"></script>
 
 <!-- Plugins -->
 
