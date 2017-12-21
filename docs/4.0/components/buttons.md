@@ -36,7 +36,6 @@ Bootstrap includes several predefined button styles, each serving its own semant
 Fancy larger or smaller buttons? Add `.btn-lg` or `.btn-sm` for additional sizes.
 
 {% example html %}
-<button class="btn btn-primary btn-xs">x-Small</button>
 <button class="btn btn-primary btn-sm">Small</button>
 <button class="btn btn-primary">Regular</button>
 <button class="btn btn-primary btn-lg">Large</button>
